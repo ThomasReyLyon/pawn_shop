@@ -1,0 +1,14 @@
+.carousel-caption h5{
+    font-size: 3vw;
+    font-family: 'Righteous', cursive;
+}
+
+.carousel-caption p{
+    font-size: 1.3vw;
+    font-family: 'Righteous', cursive;
+    color: rgb(181, 196, 190);
+}
+
+.carousel-item{
+    opacity: 0.7;
+}
