@@ -19,16 +19,20 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-white" href="#">Qui sommes-nous? <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#nous">Qui sommes-nous? <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Produits du mois</a>
+              <a class="nav-link text-white" href="#PduMois">Produits du mois</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Articles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Liens utiles</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Voitures années 70</a>
+                <a class="dropdown-item" href="#">Armes de guerres anciennes</a>
+                <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
+                <a class="dropdown-item" href="#">URSS</a>
+                <a class="dropdown-item" href="#">Retro-gaming</a>
+              </div>
             </li>
           </ul>
           <span class="navbar-text text-white">
@@ -40,7 +44,7 @@
   </div>
 <!-- -------------------------------------------------- carousel 1 ------------------------------------------------------------------------------------- -->
 
-  <div class="container">
+  <div class="container" id="PduMois">
     <div class="bd-example">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -89,7 +93,8 @@
   </div>
 </div>
 <!-- -------------------------------------------------- Cards 1 ------------------------------------------------------------------------------------- -->
-<div class="container">
+
+<div class="container" id="articles">
   <div class="row">
     <div class="card mb-3 col-6" style="max-width: 540px;">
       <div class="row no-gutters">
@@ -196,8 +201,8 @@
     	  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     	  <a class="btn btn-primary btn-lg" href="#" role="button">plus d'infos</a>
     </div>
-  </div>
-  <div class="container">
+
+  <div class="container" id="Liens">
     <footer class="footer mt-auto py-3 bg-dark">
       
         <span class="text-white">Place sticky footer content here.</span>
