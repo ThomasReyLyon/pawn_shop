@@ -3,18 +3,21 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  	 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  	 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  	 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  	 	 <link rel="stylesheet" href="style.css">
-      <title>Allez Sainté !</title>
+
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300|Lilita+One" rel="stylesheet">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="style.css" type="text/css">
+      
+      <title>PawnShop !</title>
   </head>
 
 <body>
-  <div class="container">	
+  <div class="container-fluid">	
   	<header>
 <!-- -------------------------------------------------- NavBar ------------------------------------------------------------------------------------- -->
-    	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
         <a class="navbar-brand text-white" href="#">Pawn Shop</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,16 +42,19 @@
             </li>
           </ul>
           <span class="navbar-text text-white">
-          Navbar text with an inline element
+          Tout a dix balles ou j'remballe !!!
           </span>
         </div>
       </nav>
   	</header>
   </div>
+  <hr>
 <!-- -------------------------------------------------- carousel 1 ------------------------------------------------------------------------------------- -->
 
-  <div class="container" id="PduMois">
-    <div class="bd-example">
+  <div class="container-fluid p-5" id="PduMois">
+    
+    <h1> &#xe04f;Produits&#x00b4;stars&#x00b4;du&#x00b4;moment&#xe050;</h1>
+    <div class="bd-example p-5">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -56,26 +62,26 @@
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://via.placeholder.com/350x150" class="d-block w-100" alt="...">
+        <div class="carousel-item active"  style="height: 28rem">
+          <img src="https://res.cloudinary.com/dm6h7zne5/image/upload/v1551718163/pawnshop_pic.png" class="d-block w-100" alt="..." height=100%>
           <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h5>On achète, on vend.</h5>
+              <p>Le profit c'est pour nous, le cash c'est pour vous</p>
           </div>
         </div>
 <!-- -------------------------------------------------- carousel 2 ------------------------------------------------------------------------------------- -->
 
-      <div class="carousel-item">
-         <img src="https://via.placeholder.com/350x150" class="d-block w-100" alt="...">
+      <div class="carousel-item" style="height: 28rem">
+         <img src="https://moneycrashers-sparkchargemedia.netdna-ssl.com/wp-content/uploads/2011/03/things-should-shouldnt-buy-from-pawnshops-1068x713.jpg" class="d-block w-100" alt="..." height=100%>
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5>Des occasions en Or</h5>
+            <p>Surtout pour nous</p>
          </div>
       </div>
 <!-- -------------------------------------------------- carousel 3 ------------------------------------------------------------------------------------- -->
 
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/350x150" class="d-block w-100" alt="...">
+      <div class="carousel-item" style="height: 28rem">
+        <img src="http://www.deco-plaques.com/438-large_default/grande-plaque-quartier-des-bonnes-affaires.jpg" class="d-block w-100" alt="..." height=100%>
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -97,8 +103,8 @@
 </div>
 <!-- -------------------------------------------------- Cards 1 ------------------------------------------------------------------------------------- -->
 
-<div class="container" id="articles">
-  <div class="row">
+<div class="container-fluid p-5" id="articles">
+  <div class="row justify-content-around">
     <div class="card mb-3 col-6" style="max-width: 540px;">
       <div class="row no-gutters">
         <div class="col-md-4">
@@ -132,7 +138,7 @@
   </div>
     <!-- -------------------------------------------------- Cards 3 ------------------------------------------------------------------------------------- -->
 
-  <div class="row">
+  <div class="row justify-content-around">
     <div class="card mb-3 col-6" style="max-width: 540px;">
       <div class="row no-gutters">
         <div class="col-md-4">
@@ -186,7 +192,7 @@
 
 <!-- ---------------------------------------------Qui sommes-nous?------------------------------------------------------------------------------- -->
 
-  <div class="container">
+  <div class="container-fluid" id="nous">
     <div class="jumbotron">
     	  <h1 class="display-4">Qui sommes-nous?</h1>
     	  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -205,7 +211,7 @@
     	  <a class="btn btn-primary btn-lg" href="#" role="button">plus d'infos</a>
     </div>
 
-<div class="container" id="Liens">
+<div class="container-fliud" id="Liens">
     <footer class="footer mt-auto py-3 bg-dark text-white">
 
  <div class="row" style="margin:auto;">

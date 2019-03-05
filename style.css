@@ -11,3 +11,50 @@
 	height:100px;
 	width:100px;
 }
+
+@font-face{
+    font-family: 'york';
+    src:url('fonts/yorkwhiteletter.otf'), url('fonts/yorkwhiteletter.ttf')
+}
+@font-face{
+    font-family:"shinyday";
+    src: url('fonts/Shinyday\ free\ personal\ use.ttf');
+}
+@font-face{
+    font-family: 'rockstar';
+    src: url('fonts/rockstar\ free\ personal\ use.ttf');
+}
+
+#PduMois h1{
+    text-align: center;
+    font-family: 'york', cursive;
+    text-transform: uppercase;
+    color:rgb(88, 104, 93);
+    font-size: 4em;
+}
+
+.carousel-caption h5{
+    font-size: 8vw;
+    font-family: 'rockstar', cursive;
+    color: rgb(220,220,220);
+}
+
+.carousel-caption p{
+    font-size: 5vw;
+    font-family: "shinyday", cursive;
+    color: rgb(220,220,220);
+}
+
+
+.bd-example{
+    margin : 0 auto;
+}
+#PduMois, #nous{
+    background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_light.jpg);
+}
+
+#articles{
+    background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_dark.jpg);
+}
+
+
