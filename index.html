@@ -11,14 +11,15 @@
        <link rel="stylesheet" href="style.css" type="text/css">
       
       <title>PawnShop !</title>
+
   </head>
 
 <body>
   <div class="container-fluid">	
   	<header>
 <!-- -------------------------------------------------- NavBar ------------------------------------------------------------------------------------- -->
-    	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
-        <a class="navbar-brand text-white" href="#">Pawn Shop</a>
+    	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-white mr-5" href="#">&#xe04f;Pawn&#x00e4;Shop&#xe050;</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,7 +38,7 @@
                 <a class="dropdown-item" href="Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
                 <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
                 <a class="dropdown-item" href="#">URSS</a>
-                <a class="dropdown-item" href="#">Retro-gaming</a>
+                <a class="dropdown-item" href="Page_secondaire/page_retro.html">Retro-gaming</a>
               </div>
             </li>
           </ul>
@@ -48,12 +49,13 @@
       </nav>
   	</header>
   </div>
-  <hr>
+
 <!-- -------------------------------------------------- carousel 1 ------------------------------------------------------------------------------------- -->
 
-  <div class="container-fluid p-5" id="PduMois">
+  <div class="container-fluid" id="PduMois">
     
     <h1> &#xe04f;Produits&#x00b4;stars&#x00b4;du&#x00b4;moment&#xe050;</h1>
+    
     <div class="bd-example p-5">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -62,32 +64,48 @@
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active"  style="height: 28rem">
-          <img src="https://res.cloudinary.com/dm6h7zne5/image/upload/v1551718163/pawnshop_pic.png" class="d-block w-100" alt="..." height=100%>
-          <div class="carousel-caption d-none d-md-block">
-              <h5>On achète, on vend.</h5>
-              <p>Le profit c'est pour nous, le cash c'est pour vous</p>
-          </div>
-        </div>
+
+          <div class="carousel-item active" style="height: 28rem">
+              <img src="https://moneycrashers-sparkchargemedia.netdna-ssl.com/wp-content/uploads/2011/03/things-should-shouldnt-buy-from-pawnshops-1068x713.jpg" class="d-block w-100" alt="..." height=100%>
+               <div class="carousel-caption d-none d-md-block">
+                 <h5>Des occasions en Or</h5>
+                 <p>Surtout pour nous</p>
+              </div>
+           </div>
 <!-- -------------------------------------------------- carousel 2 ------------------------------------------------------------------------------------- -->
 
-      <div class="carousel-item" style="height: 28rem">
-         <img src="https://moneycrashers-sparkchargemedia.netdna-ssl.com/wp-content/uploads/2011/03/things-should-shouldnt-buy-from-pawnshops-1068x713.jpg" class="d-block w-100" alt="..." height=100%>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Des occasions en Or</h5>
-            <p>Surtout pour nous</p>
-         </div>
+<div class="carousel-item produits_star" style="height: 28rem">
+    <div class="row justify-content-center produits_star_cards">
+    <div class="card col-12 col-md-3 mr-1" style="width: 18rem;">
+        <img class="card-img-top" src="http://www.alienor.org/publications/aux-armes/images/small/M0846-ACM_N_1995-60_1.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-white">Lebel Kropastschek</h5>
+          <p class="card-text text-white">Tuer pour pas cher, c'est ici!</p>
+          <a href="#" class="btn btn-dark">en savoir plus</a>
+        </div>
       </div>
-<!-- -------------------------------------------------- carousel 3 ------------------------------------------------------------------------------------- -->
-
-      <div class="carousel-item" style="height: 28rem">
-        <img src="http://www.deco-plaques.com/438-large_default/grande-plaque-quartier-des-bonnes-affaires.jpg" class="d-block w-100" alt="..." height=100%>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <div class="card col-12 col-md-3 mr-1" style="width: 18rem;">
+          <img class="card-img-top" src="" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card col-12 col-md-3 mr-1" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
       </div>
-    </div>
+ </div>
+<!-- -------------------------------------------------- carousel 3 ------------------------------------------------------------------------------------- -->
+
+
+</div>
 <!-- -------------------------------------------------- carousel commande --------------------------------------------------------------------------------- -->
 
       <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -98,7 +116,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+    
   </div>
 </div>
 <!-- -------------------------------------------------- Cards 1 ------------------------------------------------------------------------------------- -->
