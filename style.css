@@ -1,3 +1,4 @@
+
 .btn-social{
 	height:35px;
 	margin:3px;
@@ -14,7 +15,7 @@
 
 @font-face{
     font-family: 'york';
-    src:url('fonts/yorkwhiteletter.otf'), url('fonts/yorkwhiteletter.ttf')
+    src:url('fonts/yorkwhiteletter.otf'), url('fonts/yorkwhiteletter.ttf');
 }
 @font-face{
     font-family:"shinyday";
@@ -86,3 +87,6 @@
 }
 
 
+.jumbotron {
+    margin-bottom: 0;
+}
