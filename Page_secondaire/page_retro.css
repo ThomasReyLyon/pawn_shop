@@ -1,0 +1,7 @@
+.card-img-top:hover .texte-transparent {
+	opacity: 1;
+	transition: 500ms;
+}
+.texte-transparent{
+	opacity: 0;
+}
