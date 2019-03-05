@@ -1,0 +1,75 @@
+@font-face{
+    font-family: 'york';
+    src:url('fonts/yorkwhiteletter.otf'), url('fonts/yorkwhiteletter.ttf')
+}
+@font-face{
+    font-family:"shinyday";
+    src: url('fonts/Shinyday\ free\ personal\ use.ttf');
+}
+@font-face{
+    font-family: 'rockstar';
+    src: url('fonts/rockstar\ free\ personal\ use.ttf');
+}
+.navbar-brand{
+    font-family: 'york';
+    font-size: 4em;
+}
+
+#PduMois h1{
+    text-align: center;
+    font-family: 'york', cursive;
+    text-transform: uppercase;
+    color:rgb(88, 104, 93);
+    font-size: 4em;
+}
+
+.carousel-caption h5{
+    font-size: 2vw;
+    font-family: 'rockstar', cursive;
+    color: rgb(220,220,220);
+}
+
+.carousel-caption p{
+    font-size: 1vw;
+    font-family: "shinyday", cursive;
+    color: rgb(220,220,220);
+}
+
+.produits_star{
+   
+    background : linear-gradient(rgba(220,220,220,0.3), rgba(220,220,220,0.3)),url('images/bg_dark.jpg');
+}
+.card{
+    background: linear-gradient(rgba(220,220,220,0.3), rgba(220,220,220,0.3));
+}
+.produits_star_cards{
+    margin-top: 8%;
+}
+.card h3{
+    font-size: 2vw;
+    font-family: 'rockstar', cursive;
+}
+
+.image_produit_star{
+    max-height: 100%;
+}
+
+.nav-link, .dropdown-item{
+    font-family: 'rockstar', cursive;
+    font-size : 2em;
+}
+
+.bd-example{
+    margin : 0 auto;
+}
+
+#PduMois, #nous{
+    background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_light.jpg);
+}
+
+#articles{
+    background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_dark.jpg);
+}
+
+
+  
