@@ -10,5 +10,12 @@
 }
 
 .carousel-item{
-    opacity: 0.7;
+
+}
+
+.bd-example{
+    margin : 0 auto;
+}
+.custom_carousel{
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('abstract-board-wood-vintage-texture-floor-915538-pxhere.com.jpg');
 }
