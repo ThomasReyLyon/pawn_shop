@@ -36,12 +36,22 @@
 }
 
 .produits_star{
-    background: linear-gradient(rgba(220,220,220,0.3), rgba(220,220,220,0.3)),url('images/bg_dark.jpg');
+   
+    background : linear-gradient(rgba(220,220,220,0.3), rgba(220,220,220,0.3)),url('images/bg_dark.jpg');
 }
-
+.card{
+    background: linear-gradient(rgba(220,220,220,0.3), rgba(220,220,220,0.3));
+}
+.produits_star_cards{
+    margin-top: 8%;
+}
 .card h3{
     font-size: 2vw;
     font-family: 'rockstar', cursive;
+}
+
+.image_produit_star{
+    max-height: 100%;
 }
 
 .nav-link, .dropdown-item{
@@ -61,3 +71,5 @@
     background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_dark.jpg);
 }
 
+
+  
