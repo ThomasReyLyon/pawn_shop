@@ -1,0 +1,26 @@
+@font-face{
+    font-family: 'york';
+    src:url('fonts2/yorkwhiteletter.otf'), url('fonts2/yorkwhiteletter.ttf');
+}
+@font-face{
+    font-family:"shinyday";
+    src: url('fonts/Shinyday\ free\ personal\ use.ttf');
+}
+@font-face{
+    font-family: 'rockstar';
+    src: url('fonts/rockstar\ free\ personal\ use.ttf');
+}
+
+.navbar-brand{
+    font-family: 'york';
+    font-size: 4em;
+}
+
+.poster_list{
+    background: url('images/bg_light.jpg')
+}
+
+.fas{
+    float: right;
+    margin-top : 5%;
+}
