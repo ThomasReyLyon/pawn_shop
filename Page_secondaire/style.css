@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'york';
-    src:url('fonts/yorkwhiteletter.otf'), url('fonts/yorkwhiteletter.ttf')
+    src:url('fonts/yorkwhiteletter.otf'), url('fonts/yorkwhiteletter.ttf');
 }
 @font-face{
     font-family:"shinyday";
@@ -64,7 +64,13 @@
 }
 
 #PduMois, #nous{
-    background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_light.jpg);
+    /*background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_light.jpg);*/
+}
+
+.background-body {
+    background: url('images/bg_light.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #articles{
