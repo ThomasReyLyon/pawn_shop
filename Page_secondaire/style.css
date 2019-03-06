@@ -1,81 +1,107 @@
 @font-face{
     font-family: 'york';
-    src:url('fonts/yorkwhiteletter.otf'), url('fonts/yorkwhiteletter.ttf');
+    src:url('fonts2/yorkwhiteletter.otf'), url('fonts2/yorkwhiteletter.ttf');
 }
 @font-face{
     font-family:"shinyday";
-    src: url('fonts/Shinyday\ free\ personal\ use.ttf');
+    src: url('fonts2/Shinyday\ free\ personal\ use.ttf');
 }
 @font-face{
     font-family: 'rockstar';
-    src: url('fonts/rockstar\ free\ personal\ use.ttf');
+    src: url('fonts2/rockstar\ free\ personal\ use.ttf');
 }
+
+@font-face{
+    font-family: 'nashvill';
+    src: url('fonts2/NASHVILL.TTF');
+}
+
 .navbar-brand{
     font-family: 'york';
-    font-size: 4em;
+    font-size: 4rem;
 }
 
-#PduMois h1{
-    text-align: center;
-    font-family: 'york', cursive;
-    text-transform: uppercase;
-    color:rgb(88, 104, 93);
-    font-size: 4em;
+
+.fas{
+    float: right;
+    margin-top : 5%;
 }
 
-.carousel-caption h5{
-    font-size: 2vw;
-    font-family: 'rockstar', cursive;
-    color: rgb(220,220,220);
+.card-img-top{
+    opacity: 0.7;
 }
 
-.carousel-caption p{
-    font-size: 1vw;
-    font-family: "shinyday", cursive;
-    color: rgb(220,220,220);
+.card:hover .card-img-top{
+    opacity : 1;
+    transition : 1000ms;
 }
 
-.produits_star{
-   
-    background : linear-gradient(rgba(220,220,220,0.3), rgba(220,220,220,0.3)),url('images/bg_dark.jpg');
+.card:hover .card-header h2{
+    font-size: 1.7rem;
+    font-weight: 300;
+    transition: 1000ms;
 }
+
+.card-header h2{
+    font-family: 'rockstar';
+    font-size:1.5rem;
+    color: white;
+}
+
+.card-title{
+    font-family:"nashvill";
+    font-size:1.5rem;
+    color: white;
+    
+}
+.card-text{
+    font-family: 'rockstar';
+    font-size:1rem;
+    color: white;
+}
+.test{
+    background-color: red;
+}
+
+.purchase_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+
 .card{
-    background: linear-gradient(rgba(220,220,220,0.3), rgba(220,220,220,0.3));
-}
-.produits_star_cards{
-    margin-top: 8%;
-}
-.card h3{
-    font-size: 2vw;
-    font-family: 'rockstar', cursive;
+    background-color: grey;
+    border: 1px solid lightgrey;
 }
 
-.image_produit_star{
-    max-height: 100%;
+.modal-pic{
+    height: 80%;
+    background-image: url('images/clem-onojeghuo-179397-unsplash-1.jpg');
+    background-size: contain;
 }
 
-.nav-link, .dropdown-item{
-    font-family: 'rockstar', cursive;
-    font-size : 2em;
+.more_info{
+    background-color: orange;
+    font-family: 'rockstar';
+    font-size: 1rem;
 }
 
-.bd-example{
-    margin : 0 auto;
+.more_info:hover{
+    font-size:1.3rem;
+    box-shadow: 1px 1px 1px 1px;
 }
 
-#PduMois, #nous{
-    /*background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_light.jpg);*/
+i:hover{
+    background-color : red;
+    border-radius: 8px;
+    transition: 1000ms;
 }
 
-.background-body {
-    background: url('images/bg_light.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+.presentation_categorie{
+    background: url('images/bg_dark.jpg');
+    font-family: 'rockstar';
 }
 
-#articles{
-    background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_dark.jpg);
-}
-
-
-  

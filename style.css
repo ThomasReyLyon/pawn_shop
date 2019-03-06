@@ -1,16 +1,26 @@
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 
-.btn-social{
-	height:35px;
-	margin:3px;
 }
-.cardEquipe{
-	height:100px;
-	padding-top: 1px;
-	width:250px;
+
+.fa:hover {
+    opacity: 0.7;
 }
-.imgEquipe{
-	height:100px;
-	width:100px;
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
 @font-face{
@@ -41,7 +51,7 @@
 .carousel-caption h5{
     font-size: 2vw;
     font-family: 'rockstar', cursive;
-    color: rgb(220,220,220);
+    color: red;
 }
 
 .carousel-caption p{
@@ -86,6 +96,9 @@
     background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_dark.jpg);
 }
 
+ul{
+list-style: none;
+}
 
 .jumbotron {
     margin-bottom: 0;
