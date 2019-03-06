@@ -86,17 +86,9 @@
 .more_info:hover{
     font-size:1.3rem;
     box-shadow: 1px 1px 1px 1px;
-<<<<<<< HEAD
     transition: 250ms;
 }
 
-i:hover{
-    background-color : red;
-    border-radius: 8px;
-=======
->>>>>>> cc5f99c6a7f4d083f92ce4ce32ea1846649da308
-    transition: 1000ms;
-}
 
 
 
@@ -105,7 +97,6 @@ i:hover{
     font-family: 'rockstar';
 }
 
-<<<<<<< HEAD
 .produit-image {
     border: 1px solid gray;
     margin-top: 2rem;
@@ -126,7 +117,6 @@ i:hover{
 .produit-box img {
     height: 15rem;
 }
-=======
 
 /* MODAL */
 
@@ -167,4 +157,3 @@ i:hover{
 .modal-footer{
     background-color : #ececec;
 }
->>>>>>> cc5f99c6a7f4d083f92ce4ce32ea1846649da308
