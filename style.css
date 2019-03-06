@@ -37,7 +37,7 @@
 }
 .navbar-brand{
     font-family: 'york';
-    font-size: 4em;
+    font-size: 4rem;
 }
 
 #PduMois h1{
@@ -45,7 +45,7 @@
     font-family: 'york', cursive;
     text-transform: uppercase;
     color:rgb(88, 104, 93);
-    font-size: 4em;
+    font-size: 4rem;
 }
 
 .carousel-caption h5{
@@ -81,7 +81,7 @@
 
 .nav-link, .dropdown-item{
     font-family: 'rockstar', cursive;
-    font-size : 2em;
+    font-size : 1.6rem;
 }
 
 .bd-example{

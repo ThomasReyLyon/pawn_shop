@@ -92,6 +92,7 @@
 .more_info:hover{
     font-size:1.3rem;
     box-shadow: 1px 1px 1px 1px;
+    transition: 250ms;
 }
 
 i:hover{
@@ -105,3 +106,23 @@ i:hover{
     font-family: 'rockstar';
 }
 
+.produit-image {
+    border: 1px solid gray;
+    margin-top: 2rem;
+}
+.produit-description{
+    width: 100%;
+    background-color: #b6b6b6;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid gray;
+    padding: 1rem 0;
+}
+
+.box-btn {
+    height: 3rem;;
+}
+
+.produit-box img {
+    height: 15rem;
+}
