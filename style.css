@@ -103,3 +103,18 @@ list-style: none;
 .jumbotron {
     margin-bottom: 0;
 }
+
+.card_article {
+    max-width: 380px;
+    max-height: 250px;
+}
+
+.card_article > img {
+    max-width: 380px;
+    max-height: 250px;
+    opacity: 0.45;
+}
+
+.card_article:hover img {
+    opacity: 1;
+}
