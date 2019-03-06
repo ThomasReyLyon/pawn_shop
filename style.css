@@ -85,9 +85,12 @@
     background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_dark.jpg);
 }
 
-.pdf{
- min-width:400px;
-  min-height:280px;
-  margin:0;
- }
-
+#pdf{
+    display:block;
+width:auto;
+margin-left:auto;
+margin-right:auto;
+     width: 940px;
+   margin-right: auto;
+   margin-left: auto;
+}
