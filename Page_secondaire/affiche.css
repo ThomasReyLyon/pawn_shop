@@ -1,0 +1,64 @@
+@font-face{
+    font-family: 'york';
+    src:url('fonts2/yorkwhiteletter.otf'), url('fonts2/yorkwhiteletter.ttf');
+}
+@font-face{
+    font-family:"shinyday";
+    src: url('fonts2/Shinyday\ free\ personal\ use.ttf');
+}
+@font-face{
+    font-family: 'rockstar';
+    src: url('fonts2/rockstar\ free\ personal\ use.ttf');
+}
+
+@font-face{
+    font-family: 'nashvill';
+    src: url('fonts2/NASHVILL.TTF');
+}
+
+.navbar-brand{
+    font-family: 'york';
+    font-size: 4em;
+}
+
+.poster_list{
+    background: url('images/bg_light.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fas{
+    float: right;
+    margin-top : 5%;
+}
+
+.card-img-top{
+    opacity: 0.7;
+}
+
+.card:hover .card-img-top{
+    opacity : 1;
+    transition : 1000ms;
+}
+
+.card-header{
+    font-family: 'rockstar';
+    font-size:2em;
+    color: white;
+}
+
+.card-title{
+    font-family:"nashvill";
+    font-size:2em;
+    color: white;
+    
+}
+.card-text{
+    font-family: 'rockstar';
+    font-size:1.5em;
+    color: white;
+}
+
+.card{
+    background-image: linear-gradient(rgba(220,220,220,0.4),rgba(220,220,220,0.4)),url('images/bg_dark.jpg');
+}
