@@ -223,15 +223,10 @@ header {
 }
 /* MODAL */
 
-.modal-header {
+.modal-header{
   background-color: #343a40;
 }
-.close {
-  color: #ffff;
-}
-.close:hover{
-  color: #ffff;
-}
+
 .modal-header button {
   padding: 0;
 }
@@ -239,7 +234,7 @@ header {
 .modal-title {
   font-family: "rockstar";
   font-size: 2rem;
-  color: #b6b6b6;
+  color: white;
 }
 
 .modal-pic {
@@ -248,6 +243,7 @@ header {
   height: 40%;
   background-color: #ececec;
   margin: auto;
+  border-top: 2px solid #dee2e6;
 }
 .modal-pic img {
   width: 45%;
@@ -255,16 +251,21 @@ header {
   margin: 2% auto;
 }
 
-.modal-body p {
-  font-size: 1rem;
-}
 .modal-body {
-  background-color:#ececec;
-  border-top: 1px solid #dee2e6;
+  background-color: #ececec;
+  border-top: 2px solid #dee2e6;
 }
+
 .modal-footer {
   background-color: #ececec;
 }
+
+.moodal{
+  text-align: center;
+  font-family: 'rockstar', cursive;
+  font-size: 2em;
+}
+
 
 footer {
   color: #666 !important;
@@ -277,3 +278,11 @@ footer {
 .copyright {
   font-size: 0.7rem;
 }
+.close{
+  color: white;
+}
+
+.close:hover{
+  color: white;
+}
+

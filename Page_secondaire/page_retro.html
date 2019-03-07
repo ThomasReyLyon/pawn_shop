@@ -1,172 +1,639 @@
 <!DOCTYPE html>
-<html>
+<html lang=fr>
+
 <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-       <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
-       <link rel="stylesheet" href="page_retro.css" type="text/css">
-   	  <title>PawnShop/retroGaming</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300|Lilita+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Pawn Shop</title>
 </head>
-<body>
-  	<header>
-<!-- -------------------------------------------------- NavBar ------------------------------------------------------------------------------------- -->
-    	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
-        <a class="navbar-brand text-white" href="#">Pawn Shop</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#nous">Qui sommes-nous? <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#PduMois">Produits du mois</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Voitures années 70</a>
-                <a class="dropdown-item" href="#">Armes de guerres anciennes</a>
-                <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
-                <a class="dropdown-item" href="#">URSS</a>
-                <a class="dropdown-item" href="#">Retro-gaming</a>
+
+<body class="poster_list">
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom bg-dark">
+      <p class="navbar-brand text-white my-0 mr-md-auto">&#xe04f;Pawn&#x00e4;Shop&#xe050;</p>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="m-2 liens_nav" href="#">Qui sommes-nous?</a>
+        <a class="m-2 liens_nav" href="#">Produits du mois</a>
+      </nav>
+      <div class="dropdown mr-md-5">
+        <a class="m-2 dropdown-toggle liens_nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Voitures années 70</a>
+          <a class="dropdown-item" href="Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
+          <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
+          <a class="dropdown-item" href="#">Affiches</a>
+          <a class="dropdown-item" href="Page_secondaire/page_retro.html">Retro-gaming</a>
+        </div>
+      </div>
+      <a class="btn btn-light register" data-toggle="modal" data-target=".modal_seConnecter" href="#">Se connecter</a>
+      <!-- Modal Se connecter du menu-->
+      <div class="modal fade modal_seConnecter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content bg-dark">
+            <main class="login-form">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="card">
+                      <div class="card-header">Se connecter</div>
+                      <div class="card-body">
+                        <form action="" method="">
+                          <div class="form-group row">
+                            <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail</label>
+                            <div class="col-md-6">
+                              <input type="text" id="email_address" class="form-control" name="email-address" required
+                                autofocus>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Mot de passe</label>
+                            <div class="col-md-6">
+                              <input type="password" id="password" class="form-control" name="password" required>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
+                              <div class="checkbox">
+                                <label><input type="checkbox" name="remember">se souvenir</label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">Connexion</button>
+                            <a href="#" class="btn btn-link">Mot de passe oublié?</a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <div class="container head_categorie pb-3 pt-3">
+    <div class="row justify-content-center pt-4">
+      <div class="jumbotron presentation_categorie col-12">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h1 class="display-4 text-center mb-3">Retro-gaming</h1>
+            <p class="lead text-center">Bienvenu sur notre page dédié au Retro-gaming!</p>
+            <hr class="mb-5">
+            <h3 class="text-center">Nous vous proposons 2 consoles, la Nintendo Entertainement System et la Mega Drive ainsi que certains de leurs jeux les plus marquant tel que Super Mario Bros. ou Sonic The Hedgehog 2! </h3><h3 class="my-5 text-center">Tous nos jeux sont vendus en loose, les console sont dezonné, moddée rgb et sont fourni avec leurs cable d'aliementation et rgb.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- TEMPLATE PRODUIT-->
+
+  <section id="produits">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/image_retro/img_nes.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#NES">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Nintendo - NES</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>septembre 1986</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>69,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/image_retro/img_smbGP.png" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#SMB">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Super Mario Bros. - NES</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>mai 1987</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>14,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/image_retro/img_punchOutGP.png" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#PUNCHOUT">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Punch Out - NES</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Décembre 1987</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>19,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/image_retro/img_megaMan2GP.png" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#MEGAMAN2">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Mega Man 2 - NES</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Décembre 1990</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>39,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/image_retro/img_duckTalesGP.png" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#DUCKTALES">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Duck Tales - NES</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Décembre 1990</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>14,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/image_retro/img_lozGP.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#LOZ">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>The Legend of Zelda - NES</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Octobre 1988</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>39,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/image_retro/img_genesis.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#GENESIS">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Sega - Mega Drive</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Novembre 1990</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>69,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/image_retro/img_streetOfRage2GP.jpeg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#STREETRAGE">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Street of Rage 2 - Mega Drive</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Janvier 1993</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>29,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/image_retro/img_sonic2GP.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#SONIC2">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Sonic the Hedgehog 2 - Mega Drive</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Novembre 1992</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>19,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/image_retro/img_roadRash2GP.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#ROADRASH">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Road Rash 2 - Mega Drive</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>1992</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>39,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL-->
+
+  <div class="modal fade" id="NES" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Nintendo NES</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/image_retro/img_nes.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+
+          <p> Sortie le 1er septembre 1986 en europe, la NES est la console où les plus grands noms du jeux video ont débutés ce qui la rend extrement populaire dans le millieu du rétro-gaming</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="SMB" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Super Mario Bros. - NES</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/image_retro/img_smb.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+
+          <p> C'est le jeux le plus vendu de la console. super mario bros a posé les bases d'un gameplay encore populaire de nos jours et souvent réutiliser dans de nouvelle itération de la serie mario </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="PUNCHOUT" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Punch Out - NES</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/image_retro/img_punchOut.jpeg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+
+          <p> Dans Punch Out vous incarnée Little Mac, un boxeur amateur qui participe à des tournois et tente de détronner le champion du monde Mike Tyson! le gameplay repose principalement sur l'analyse et la memorisation de pattern</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="MEGAMAN2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Mega Man 2 - NES</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/image_retro/img_megaMan2.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+
+          <p> 2eme opus de la série Mega Man, série extremement populaire sur NES (9 jeux sortie!) vous incarneé Mega Man un robot inventé par le docteur Light dans le but de contre-carrer les plans maléfique du docteur Willy</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="DUCKTALES" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Duck Tales - NES</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/image_retro/img_ducktales.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+
+          <p> Adapté du dessin animé Duck Tales (la bande à picsou en français) ce jeu à été réaliser par les créateur de Mega Man et celà se voit dans son gameplay qui est de qualité, ce qui n'est pas monnaie courrante dans les jeux à liscence</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="LOZ" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">The Legend of Zelda - NES</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/image_retro/img_loz.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+
+          <p> Jeu révolutionnaire pour son époque, contrairement à la plupart des jeux de cette console la cartouche de the Legend of Zelda avait une pile qui permettait de sauvegarder sa progression. De plus le jeu est open world ce qui est rare sur cette plateforme </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="GENESIS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Sega - Mega Drive</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/image_retro/img_genesis.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+
+          <p> La Mega Drive est l'arme secrète de sega pour détronné nintendo. sortie en semptembre 1990 en europe, soit 2 ans avant la Super Nintendo, son but était de faire concurence à la nes et de tenir tête par la suite à la SNES</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="STREETRAGE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Street of Rage 2 - Mega Drive</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/image_retro/img_streetofRage.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+
+          <p> Street of Rage 2 est un excelent beat them up avec des musiques soignée des graphisme variée et coloré un gameplay satisfaisant et 3 personage jouable avec des moveset très différent</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="SONIC2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Sonic the Hedgehog 2 - Mega Drive</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/image_retro/img_sonic2.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+
+          <p> Après le succès énorme du première opus, Sonic 2 n'a pas déçu les fans en présentant un gameplay afinné par rapport au premier. C'est aussi dans cette opus qu'apparaît pour la première fois le fameux spindash de sonic </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="ROADRASH" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Road Rash 2 - Mega Drive</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/image_retro/img_roadRash2.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+
+          <p> Un jeu de moto déjanter où l'on participe à des course aux millieux du trafic routier et l'on frappe ses adversaire avec, entre autre, des coup de poing, de pieds, de chaine de vélo, de barre de fer ...</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer class="page-footer font-small bg-grey pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+          <div class="col-md-2 mb-md-0 mb-3 pl-5">
+          <a href="https://www.facebook.com/" class="btn-socialMedia">
+            <i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.twitter.com/" class="btn-socialMedia">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+        <div class="col-md-1">
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
+  Contactez nous
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="container modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title text-white" id="exampleModalLabel">Contactez nous</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-white">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body bg-dark">
+        <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">@</span>
+  </div>
+  <input type="text" class="form-control" style="  font-family: 'rockstar', cursive;  font-size: 2em;"placeholder="Votre email" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="moodal input-group-text">Votre message</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+      </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-danger moodal" data-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary moodal">Envoyer</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        <div class="col-md-2 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="../index.html#PduMois">Produits du mois</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Retro-gamming</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">URSS</a>
             </li>
           </ul>
-          <span class="navbar-text text-white">
-          Tout a dix balles ou j'remballe !!!
-          </span>
         </div>
-      </nav>
-  	</header>
-<div class="container-fluid">
- <div class="row justify-content-center mb-5">
-  <div class="card bg-dark">
-  	<img class="card-img" src="https://assets.vancouverisawesome.com/wp-content/uploads/2018/06/06142750/gaming-edit.jpg" style="width: 800px;" alt="image console">
-   <div class="card-img-overlay">
-  	<h1 class="card-text d-flex justify-content-center">eajrealrhaeùlrj</h1>
-   </div>
-  </div>
- </div>
-</div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="#">Voitures années 70</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Armes de guerres anciennes</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Juke-Box et vyniles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <ul class="list-unstyled">
 
-<section class="container-fluid">
-	<div class="row justify-content-center">
+            <li>
+              <a class="text-muted" href="../index.html#nous">Qui sommes nous</a>
+            </li>
+            <li>
+              <a class="text-muted" href="https://wildcodeschool.com/">Wild Code School</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12">
+            <div class="text-muted font-weight-light font-italic">© copyright - 2019 - made by the best development team ever</div>
+        </div>
+      </div>
 
-  <div class="card bg-dark text-white col-3">
-  <img class="card-img" src="https://via.placeholder.com/75x75" alt="Card image cap" alt="Card image">
-  <div class="card-img-overlay">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text">Last updated 3 mins ago</p>
-  </div>
-</div>
+    </div>
+    </div>
 
-	<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://via.placeholder.com/75x75" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-	<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://via.placeholder.com/75x75" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-	<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://via.placeholder.com/75x75" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-	<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://via.placeholder.com/75x75" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-	<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://via.placeholder.com/75x75" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-	<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://via.placeholder.com/75x75" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-	<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://via.placeholder.com/75x75" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
 
-</div>
-</section>
 
-<div class="container-fluid" style="padding:0;"id="Liens">
-    <footer class="footer mt-auto py-3 bg-dark text-white">
-
- <div class="row" style="margin:auto;">
-
-   <div class="mx-3">
-   	<ul>
-   		<li>
-    <a class="text-white" href="#">Produits du mois</a>
-    </li>
-    <li>
-    <a class="text-white" href="#">Retro-gamming</a>
-    </li>
-    <li>
-    <a class="text-white" href="#">URSS</a>
-</li>
-</ul>
-</div>
-<div>
-   	<ul>
-   		<li>
-    <a class="text-white" href="#">Voitures années 70</a>
-    </li>
-    <li>
-    <a class="text-white" href="#">Armes de guerres anciennes</a>
-    </li>
-    <li>
-    <a class="text-white" href="#">Juke-Box et vyniles</a>
-</li>
-</ul>
-</div>
-<div class="offset-6">     
-	<a class="btn btn-social btn-facebook" href="#" role="button">
-	    <span class="fa fa-facebook text-white  bg-primary"></span></a>
-
-	<a class="btn btn-social btn-twitter" href="#" role="button">
-	    <span class="fa fa-twitter text-white  bg-primary"></span></a>
-</div>
-<div>
-   	<ul>
-
-       		<li>
-    <a class="text-white" href="#">Qui sommes nous</a>
-    </li>
-    <li>
-    <a class="text-white" href="#">Contactez nous</a>
-    </li>
-        <li>
-    <a class="text-white" href="https://wildcodeschool.com/">Wild Code School</a>
-    </li>
-</ul>
-</div>
-
-   </div>
-   <div class="text-muted mx-auto font-weight-light font-italic"style="width: 200px;">© copyright - 2019
-   </div>     
   </footer>
- </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
+</body>
 
-</div>
+</html>
