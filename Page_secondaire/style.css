@@ -4,8 +4,25 @@ html, body {
     background: #ececec;
     font-family: 'Raleway', sans-serif;
 }
-.bg-grey {
-    background-color: #f4f4f4;
+header {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+nav {
+    font-family: 'rockstar', cursive;
+    font-size: 1.6rem;
+}
+
+.nav-link, .dropdown-item {
+    font-family: 'rockstar', cursive!important;
+    font-size : 1.6rem;
+}
+.btn {
+    font-family: 'rockstar', cursive!important;
+    font-size : 1.6rem;
+}
+h1 {
+    font-family: 'rockstar', cursive;
 }
 
 @font-face{
