@@ -1,0 +1,227 @@
+html, body {
+    margin: 0;
+    color:rgba(0,0,0,0.54);
+    background: #ececec;
+    font-family: 'Raleway', sans-serif;
+}
+.bg-grey {
+    background-color: #f4f4f4;
+}
+
+@font-face{
+    font-family: 'york';
+    src:url('fonts2/yorkwhiteletter.otf'), url('fonts2/yorkwhiteletter.ttf');
+}
+@font-face{
+    font-family:"shinyday";
+    src: url('fonts2/Shinyday\ free\ personal\ use.ttf');
+}
+@font-face{
+    font-family: 'rockstar';
+    src: url('fonts2/rockstar\ free\ personal\ use.ttf');
+}
+
+@font-face{
+    font-family: 'nashvill';
+    src: url('fonts2/NASHVILL.TTF');
+}
+
+header {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.navbar-brand{
+    font-family: 'york';
+    font-size: 4rem;
+}
+
+.fas{
+    float: right;
+    margin-top : 5%;
+}
+
+.card-img-top{
+    opacity: 0.7;
+}
+
+.card:hover .card-img-top{
+    opacity : 1;
+    transition : 1000ms;
+}
+
+.card:hover .card-header h2{
+    font-size: 1.7rem;
+    font-weight: 300;
+    transition: 1000ms;
+}
+
+.card-header h2{
+    font-family: 'rockstar';
+    font-size:1.5rem;
+    color: white;
+}
+
+.card-title{
+    font-family:"nashvill";
+    font-size:1.5rem;
+    color: white;
+    
+}
+.card-text{
+    font-family: 'rockstar';
+    font-size:1rem;
+    color: white;
+}
+
+.purchase_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    background-color: grey;
+    border: 1px solid lightgrey;
+}
+
+.more_info{
+    background-color: orange;
+    font-family: 'rockstar';
+    font-size: 1rem;
+}
+
+.more_info:hover{
+    font-size:1.3rem;
+    box-shadow: 1px 1px 1px 1px;
+    transition: 250ms;
+}
+
+/* GRID PRODUITS */
+
+
+.presentation_categorie h1{
+    font-family: 'rockstar';
+}
+
+.produit-image {
+    border: 1px solid gray;
+    margin-top: 2rem;
+}
+.produit-description{
+    width: 100%;
+    background-color: #b6b6b6;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 1rem 0;
+}
+
+/* GALLERIE PRODUITS */
+
+.img-responsive {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 1rem;
+    margin-left: 0.25rem;
+}
+.produits_titre {
+    margin-left: 0.25rem;
+    width: 100%;
+}
+.produits_titre h2 {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+    font-weight: bold;
+    line-height: 13px;
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 0;
+}
+.produits_titre hr{
+    margin-top: 0.33rem;
+    margin-bottom: 0.33rem;
+}
+.produits_titre p {
+    color: #666;
+    font-size: 12px;
+    line-height: 13px;
+}
+/*overlay*/
+
+.overlay .btn{
+    display: none;
+}
+.overlay:hover .btn{
+    display: inline;
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    cursor: pointer;
+    
+}
+
+.box-btn {
+    height: 3rem;;
+}
+
+.produit-box img {
+    height: 15rem;
+}
+
+#produits {
+    padding-bottom: 3rem; 
+}
+/* MODAL */
+
+
+.modal-header button{
+    padding: 0;
+}
+
+
+.modal-title{
+    font-family: 'rockstar';
+    font-size:2rem;
+    color: #b6b6b6;
+}
+
+.modal-pic{
+    display: block;
+    width: 100%;
+    height: 40%;
+    background-color : #ececec;
+    margin: auto;
+    }
+.modal-pic img{
+    width: 45%;
+    display: block;
+    margin : 2% auto;
+}
+
+.modal-body p{
+    font-family: "rockstar";
+    font-size: 1rem;
+}
+
+.modal-body{
+    background: #b6b6b6;
+}
+
+.modal-footer{
+    background-color : #ececec;
+}
+
+footer {
+    color: #666!important;
+    font-size: 0.85rem;
+}
+
+.btn-socialMedia {
+    font-size: 3rem;
+}
+.copyright{
+    font-size: 0.7rem;
+}
