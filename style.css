@@ -1,3 +1,49 @@
+html,
+body {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.54);
+  background: #ececec;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+}
+header {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+h1 {
+  font-family: "rockstar", cursive;
+}
+.liens_nav {
+  font-family: "rockstar", cursive;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white;
+  text-decoration: none;
+  transition: 100ms;
+  text-shadow: 3px 3px 3px grey;
+}
+
+.liens_nav:hover {
+  color: white;
+  text-decoration: none;
+  transition: 100ms;
+  padding: 3px;
+  text-shadow: 3px 3px 3px grey;
+}
+
+.register {
+  font-family: "rockstar", cursive;
+}
+
+.register:hover {
+  opacity: 1;
+  font-size: 1.1rem;
+  box-shadow: 1px 1px 1px 1px;
+  transition: 250ms;
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -6,126 +52,147 @@
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
-@font-face{
-    font-family: 'york';
-    src:url('fonts/yorkwhiteletter.otf'), url('fonts/yorkwhiteletter.ttf');
+@font-face {
+  font-family: "york";
+  src: url("./front/fonts/yorkwhiteletter.otf"), url("./front/fonts/yorkwhiteletter.ttf");
 }
-@font-face{
-    font-family:"shinyday";
-    src: url('fonts/Shinyday\ free\ personal\ use.ttf');
+@font-face {
+  font-family: "shinyday";
+  src: url("./front/fonts/Shinyday\ free\ personal\ use.ttf");
 }
-@font-face{
-    font-family: 'rockstar';
-    src: url('fonts/rockstar\ free\ personal\ use.ttf');
+@font-face {
+  font-family: "rockstar";
+  src: url("./front/fonts/rockstar\ free\ personal\ use.ttf");
 }
-.navbar-brand{
-    font-family: 'york';
-    font-size: 4rem;
-}
-
-#PduMois h1{
-    text-align: center;
-    font-family: 'york', cursive;
-    text-transform: uppercase;
-    color:rgb(88, 104, 93);
-    font-size: 4rem;
+.navbar-brand {
+  font-family: "york";
+  font-size: 4rem;
 }
 
-.carousel-caption h5{
-    font-size: 2vw;
-    font-family: 'rockstar', cursive;
-    color: red;
+nav {
+  font-family: "rockstar", cursive;
+  font-size: 1.6rem;
 }
 
-.carousel-caption p{
-    font-size: 1vw;
-    font-family: "shinyday", cursive;
-    color: rgb(220,220,220);
+#PduMois {
+  width: 100%;
+}
+#carouselExampleCaptions {
+  width: 100%;
 }
 
-.produits_star{
-   
-    background : linear-gradient(rgba(220,220,220,0.3), rgba(220,220,220,0.3)),url('images/bg_dark.jpg');
-}
-.card{
-    background: linear-gradient(rgba(220,220,220,0.3), rgba(220,220,220,0.3));
-}
-.produits_star_cards{
-    margin-top: 8%;
-}
-.card h3{
-    font-size: 2vw;
-    font-family: 'rockstar', cursive;
+#PduMois h1 {
+  text-align: center;
+  font-family: "york", cursive;
+  text-transform: uppercase;
+  color: rgb(88, 104, 93);
+  font-size: 4rem;
 }
 
-.image_produit_star{
-    max-height: 100%;
+.carousel-caption h5 {
+  font-size: 2vw;
+  font-family: "rockstar", cursive;
+  color: red;
 }
 
-.nav-link, .dropdown-item{
-    font-family: 'rockstar', cursive;
-    font-size : 1.6rem;
+.carousel-caption p {
+  font-size: 1vw;
+  font-family: "shinyday", cursive;
+  color: rgb(220, 220, 220);
 }
 
-.bd-example{
-    margin : 0 auto;
+.card {
+  background: linear-gradient(
+    rgba(220, 220, 220, 0.3),
+    rgba(220, 220, 220, 0.3)
+  );
+}
+.produits_star_cards {
+  margin-top: 8%;
+}
+.card h3 {
+  font-size: 2vw;
+  font-family: "rockstar", cursive;
 }
 
-#PduMois, #nous{
-    background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_light.jpg);
+.image_produit_star {
+  max-height: 100%;
 }
 
-#articles{
-    background: linear-gradient(rgba(220,220,200,0.4), rgba(220,220,200,0.4)),url(images/bg_dark.jpg);
+.btn-seConnecter {
+  font-family: "rockstar", cursive;
+  font-size: 1.6rem;
 }
 
-#pdf{
-    display:block;
-width:auto;
-margin-left:auto;
-margin-right:auto;
-     width: 940px;
-   margin-right: auto;
-   margin-left: auto;
+.bd-example {
+  margin: 0 auto;
 }
 
-ul{
-list-style: none;
+#pdf {
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 .jumbotron {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-.card_article {
-    max-width: 380px;
-    max-height: 250px;
+.card-img-overlay {
+  padding-top: 5rem;
+  padding-top: 15rem;
 }
 
-.card_article > img {
-    max-width: 380px;
-    max-height: 250px;
-    opacity: 0.45;
+.fa-arrow-alt-circle-right {
+  font-size: 3rem;
 }
 
-.card_article:hover img {
-    opacity: 1;
+.card_article:hover .fleche {
+    color:rgba(211,211,211,1);;
+    transition: 250ms;
+}
+.noStyle {
+  color: #ffff;
 }
 
+.noStyle:hover .card-title {
+  color: #ffff;
+}
+
+/* CAROUSSEL */
+
+footer {
+  color: #666 !important;
+  font-size: 0.85rem;
+}
+
+.btn-socialMedia {
+  font-size: 3rem;
+}
+.copyright {
+  font-size: 0.7rem;
+}
