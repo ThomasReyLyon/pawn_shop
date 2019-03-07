@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang=fr>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300|Lilita+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Pawn Shop</title>
+</head>
+
+<body class="poster_list">
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom bg-dark">
+      <p class="navbar-brand text-white my-0 mr-md-auto">&#xe04f;Pawn&#x00e4;Shop&#xe050;</p>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-white" href="#">Qui sommes-nous?</a>
+        <a class="p-2 text-white" href="#">Produits du mois</a>
+      </nav>
+      <div class="dropdown mr-md-5">
+        <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button"
+          aria-haspopup="true" aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Voitures années 70</a>
+          <a class="dropdown-item" href="Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
+          <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
+          <a class="dropdown-item" href="#">URSS</a>
+          <a class="dropdown-item" href="Page_secondaire/page_retro.html">Retro-gaming</a>
+        </div>
+      </div>
+      <a class="btn btn-light" data-toggle="modal" data-target=".modal_seConnecter" href="#">Se connecter</a>
+      <!-- Modal Se connecter du menu-->
+      <div class="modal fade modal_seConnecter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <main class="login-form">
+              <div class="cotainer">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="card">
+                      <div class="card-header">Se connecter</div>
+                      <div class="card-body">
+                        <form action="" method="">
+                          <div class="form-group row">
+                            <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail</label>
+                            <div class="col-md-6">
+                              <input type="text" id="email_address" class="form-control" name="email-address" required
+                                autofocus>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Mot de passe</label>
+                            <div class="col-md-6">
+                              <input type="password" id="password" class="form-control" name="password" required>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
+                              <div class="checkbox">
+                                <label><input type="checkbox" name="remember">se souvenir</label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">Connexion</button>
+                            <a href="#" class="btn btn-link">Mot de passe oublié?</a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ <div class="container pb-5 custom_carousel" id="PduMois">
+
+    <div class="bd-example p-5" style="width:100%">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active"  style="height: 28rem">
+          <img src="http://lesloisirsdetigre.e-monsite.com/medias/images/jukebox-title1.jpg" class="d-block w-100" alt="..." height=100%>
+          <div class="carousel-caption d-none d-md-block">
+              
+          </div>
+        </div>
+<!-- -------------------------------------------------- carousel 2 ------------------------------------------------------------------------------------- -->
+
+      <div class="carousel-item" style="height: 28rem">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Juke_Box_Museum.jpg" class="d-block w-100" alt="..." height=100%>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Des occasions en Or</h5>
+            <p>A ne pas rater</p>
+         </div>
+      </div>
+<!-- -------------------------------------------------- carousel 3 ------------------------------------------------------------------------------------- -->
+
+      <div class="carousel-item" style="height: 28rem">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWVTlLNtpScAwdD5WwWRq5lrJiMbUJ8_waC3oYODLLueLDVIFm" class="d-block w-100" alt="..." height=100%>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Des milliers de Vinyles</h5>
+            <p></p>
+          </div>
+      </div>
+    </div>
+<!-- -------------------------------------------------- carousel commande --------------------------------------------------------------------------------- -->
+
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+
+
+  <!-- TEMPLATE PRODUIT-->
+
+
+  <section id="produits">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://t3.ftcdn.net/jpg/00/55/05/28/240_F_55052836_ujOCfWi0femAVvRrZ4t43osrpOKMQMDA.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" 
+          data-target="#JukeBox-100vinyles">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>JukeBox 100vinyles</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1971</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>1990$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://t3.ftcdn.net/jpg/00/19/74/92/240_F_19749234_Tdazd33H0v6LMG7HGVNHyTXAfF5DfVAy.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal"  
+          data-target="#JukeBox-éditionSpécialeGuitare">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>JukeBox édition spéciale guitare</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1978</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>4199$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://t4.ftcdn.net/jpg/00/21/56/95/240_F_21569510_ZKIFvKGmdQkVjMSRphC1gbYtVO28ms4B.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#JukeBoxLuminux">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>JukeBox luminux</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1980</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>2099$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZpJcWbNJEHGazMqG4H27m7zJcmQZXTgiCi92MYvFzzUfTtxVy" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" 
+          data-target="#VinilMichaelJackson">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Michael Jackson téléphone maison</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1992</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>19$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-F-CtLNK8qC2n05NDLYUQ-T_MXq8_YsNjpXM9wcI9PyCH9Qq" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" 
+          data-target="#VinylFreddieMercury">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Freddie Mercury collector</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1983</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>39$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ71UaRSrZTX7KGbSIjRq6LHhBcHBtfZ0GtkRFwXXb35J_UcmVU-A" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" 
+          data-target="#VinylTheNotorious">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>The Notorious B.I.G</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1988</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>199$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrGzvLc1EvoWCw2XdMdnqMYbpIa5EEmH564F3Pl53eJyStf0Hb" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#PlatinetournanteBeltDrive">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Platine tournante, Belt Drive, Trois Vitesses de Lecture 33/45/78rpm</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1998</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>1199$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpHPFJRPuRk5Goe6Ff4HbZ0ZGqBzD6YcaPc0JLN6yTXAUxFQcCRQ" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#PlatineVinylePioneer">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Platine vinyle Pioneer Dj PLX-500 Noir</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 2010</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>2499$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJ7z__qskvMrVZgyFU2ryv68jJp-TVPCK6xvj8pM2nt6nWpNvbg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#PlatineVinyleVerticaleDesignEnBois">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Platine vinyle verticale design en bois</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 2017</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>3300$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTsHlJo08y39zofMP-qMUIYQpGY8DnQCtmoLn98lJeDqGzwpJg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#Lampe-vinyle-rétro-chic">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Lampe vinyle rétro-chic</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 2019</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>199$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- MODAL-->
+
+  <div class="modal fade" id="JukeBox-100vinyles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">JukeBox 100vinyles</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="https://t3.ftcdn.net/jpg/00/55/05/28/240_F_55052836_ujOCfWi0femAVvRrZ4t43osrpOKMQMDA.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>La plupart de mes clients ont de vieilles machines des années 50, 60 et 70. Ils les utilisent pour écouter la collection de disques avec lesquels ils ont grandi quand ils étaient adolescents, alors avec ce JukeBox vous pouvez ainsi insérer toute votre collection de vinyle car il peut intégrer jusqu'a 100vinyles</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="JukeBox-éditionSpécialeGuitare" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">JukeBox édition spéciale guitare</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-pic">
+          <img src="https://t3.ftcdn.net/jpg/00/19/74/92/240_F_19749234_Tdazd33H0v6LMG7HGVNHyTXAfF5DfVAy.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Pourquoi ne pas avoir le JukeBox le plus Rock'n Roll de tous les temps.Entièrement façonner en forme de la célébre guitare de Johnny Hallyday , c'est le modéle emblématique pour ces fans</p>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="JukeBoxLuminux" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">JukeBox Luminux</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-pic">
+          <img src="https://t4.ftcdn.net/jpg/00/21/56/95/240_F_21569510_ZKIFvKGmdQkVjMSRphC1gbYtVO28ms4B.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Le seul JukeBox pouvant afficher différentes couleurs pour tous styles d'ambiances</p>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="VinilMichaelJackson" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vinil Michael Jackson</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZpJcWbNJEHGazMqG4H27m7zJcmQZXTgiCi92MYvFzzUfTtxVy" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Le seul Vinyl de Michael Jackson ou et present E.T + poster avec autographes </p>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="VinylFreddieMercury" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vinyl Freddie Mercury</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-F-CtLNK8qC2n05NDLYUQ-T_MXq8_YsNjpXM9wcI9PyCH9Qq" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Vinyl Freddie Mercury avec 4 photos dédicacéés</p>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="VinylTheNotorious" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vinyl The Notorious</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ71UaRSrZTX7KGbSIjRq6LHhBcHBtfZ0GtkRFwXXb35J_UcmVU-A" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p>Collections des meilleurs titres de B.I.G</p>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="PlatinetournanteBeltDrive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Platine tournante Belt Drive</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrGzvLc1EvoWCw2XdMdnqMYbpIa5EEmH564F3Pl53eJyStf0Hb" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Platine tournante Belt Drive, Trois Vitesses de Lecture 33/45/78rpm</p>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="PlatineVinylePioneer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Platine vinyle Pioneer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpHPFJRPuRk5Goe6Ff4HbZ0ZGqBzD6YcaPc0JLN6yTXAUxFQcCRQ" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Dépoussiérez vos vinyles ! Cette platine USB vous permet de convertir vos morceaux favoris au format mp3. Avec un préamplificateur phono intégré et une sortie USB, elle se connecte à tous les amplificateurs équipés d'entrées phono standard ou se branche directement sur votre ordinateur</p>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="PlatineVinyleVerticaleDesignEnBois" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Platine vinyle verticale design en bois</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJ7z__qskvMrVZgyFU2ryv68jJp-TVPCK6xvj8pM2nt6nWpNvbg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Surfer sur la mode vintage pour remettre le tourne-disque au gout du jour avec ce modéle design bois </p>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="modal fade" id="Lampe-vinyle-rétro-chic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Lampe vinyle rétro-chic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+<div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTsHlJo08y39zofMP-qMUIYQpGY8DnQCtmoLn98lJeDqGzwpJg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Décorer votre intérieur avec cette lampe tendance et chic </p>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="card-group">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+  
+  <footer class="page-footer font-small bg-grey pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+          <div class="col-md-3 mb-md-0 mb-3 pl-5">
+          <a class="btn-socialMedia">
+            <i class="fab fa-facebook-square"></i></a>
+          <a class="btn-socialMedia">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="#">Produits du mois</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Retro-gamming</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">URSS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="#">Voitures années 70</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Armes de guerres anciennes</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Juke-Box et vyniles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <ul class="list-unstyled">
+
+            <li>
+              <a class="text-muted" href="#">Qui sommes nous</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Contactez nous</a>
+            </li>
+            <li>
+              <a class="text-muted" href="https://wildcodeschool.com/">Wild Code School</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12">
+            <div class="text-muted font-weight-light font-italic">© copyright - 2019</div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
+</body>
+
+</html>
