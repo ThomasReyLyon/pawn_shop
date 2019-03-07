@@ -260,6 +260,13 @@ header {
   background-color: #ececec;
 }
 
+.moodal{
+  text-align: center;
+  font-family: 'rockstar', cursive;
+  font-size: 2em;
+}
+
+
 footer {
   color: #666 !important;
   font-size: 0.85rem;
