@@ -18,301 +18,323 @@
 
 </head>
 
-<body class="background-body">
+<body>
   <header>
-    <!-- -------------------------------------------------- NavBar ------------------------------------------------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <a class="navbar-brand text-white mr-5" href="#">&#xe04f;Pawn&#x00e4;Shop&#xe050;</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#nous">Qui sommes-nous? <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#PduMois">Produits du mois</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button"
-              aria-haspopup="true" aria-expanded="false">Categories</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Voitures années 70</a>
-              <a class="dropdown-item" href="Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
-              <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
-              <a class="dropdown-item" href="#">URSS</a>
-              <a class="dropdown-item" href="Page_secondaire/page_retro.html">Retro-gaming</a>
-            </div>
-          </li>
-          <li class="nav-item">
-                <a class="nav-link text-white" data-toggle="modal" data-target=".bd-example-modal-xl" type="button">Se connecter</a>
-
-                <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                      <main class="login-form">
-                        <div class="cotainer">
-                            <div class="row justify-content-center">
-                                <div class="col-md-8">
-                                    <div class="card">
-                                        <div class="card-header">Se connecter</div>
-                                            <div class="card-body">
-                                                <form action="" method="">
-                                                    <div class="form-group row">
-                                                        <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail</label>
-                                                        <div class="col-md-6">
-                                                            <input type="text" id="email_address" class="form-control" name="email-address" required autofocus>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group row">
-                                                        <label for="password" class="col-md-4 col-form-label text-md-right">Mot de passe</label>
-                                                        <div class="col-md-6">
-                                                            <input type="password" id="password" class="form-control" name="password" required>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group row">
-                                                        <div class="col-md-6 offset-md-4">
-                                                            <div class="checkbox">
-                                                                <label><input type="checkbox" name="remember">se souvenir</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-6 offset-md-4">
-                                                        <button type="submit" class="btn btn-primary">Connexion</button>
-                                                        <a href="#" class="btn btn-link">Mot de passe oublié?</a>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                </div>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom bg-dark">
+      <p class="navbar-brand text-white my-0 mr-md-auto">&#xe04f;Pawn&#x00e4;Shop&#xe050;</p>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="m-2 liens_nav" href="#">Qui sommes-nous?</a>
+        <a class="m-2 liens_nav" href="#">Produits du mois</a>
+      </nav>
+      <div class="dropdown mr-md-5">
+        <a class="m-2 dropdown-toggle liens_nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Voitures années 70</a>
+          <a class="dropdown-item" href="Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
+          <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
+          <a class="dropdown-item" href="#">Affiches</a>
+          <a class="dropdown-item" href="Page_secondaire/page_retro.html">Retro-gaming</a>
+        </div>
+      </div>
+      <a class="btn btn-light register" data-toggle="modal" data-target=".modal_seConnecter" href="#">Se connecter</a>
+      <!-- Modal Se connecter du menu-->
+      <div class="modal fade modal_seConnecter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content bg-dark">
+            <main class="login-form">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="card">
+                      <div class="card-header">Se connecter</div>
+                      <div class="card-body">
+                        <form action="" method="">
+                          <div class="form-group row">
+                            <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail</label>
+                            <div class="col-md-6">
+                              <input type="text" id="email_address" class="form-control" name="email-address" required
+                                autofocus>
                             </div>
-                        </div>
-                      </main>
+                          </div>
+
+                          <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Mot de passe</label>
+                            <div class="col-md-6">
+                              <input type="password" id="password" class="form-control" name="password" required>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
+                              <div class="checkbox">
+                                <label><input type="checkbox" name="remember">se souvenir</label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">Connexion</button>
+                            <a href="#" class="btn btn-link">Mot de passe oublié?</a>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-            </li>
-        </ul>
-        <span class="navbar-text text-white">
-          Tout a dix balles ou j'remballe !!!
-        </span>
+              </div>
+            </main>
+          </div>
+        </div>
       </div>
-    </nav>
+    </div>
   </header>
 
   <!-- -------------------------------------------------- carousel 1 ------------------------------------------------------------------------------------- -->
 
-  <div class="container-fluid" id="PduMois">
+  <section id="PduMois">
 
-    
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-
-          <div class="carousel-item active" style="height: 28rem">
-            <img
-              src="images/clem-onojeghuo-179397-unsplash-1.jpg"
-              class="d-block w-100" alt="..." height=100%>
-            <div class="carousel-caption d-none d-md-block">
-              <h1> &#xe04f;Bienvenu&#x00b4;chez&#x00b4;Pawn&#x00b4;Shop&#xe050;</h1>
-            </div>
+        <div class="carousel-item active" style="height: 28rem">
+          <img src="./front/images/clem-onojeghuo-179397-unsplash-1.jpg" class="d-block w-100" alt="..." height=100%>
+          <div class="carousel-caption d-none d-md-block">
+            <h1> &#xe04f;Bienvenu&#x00b4;chez&#x00b4;Pawn&#x00b4;Shop&#xe050;</h1>
           </div>
-          <!-- -------------------------------------------------- carousel 2 ------------------------------------------------------------------------------------- -->
-
-          <div class="carousel-item produits_star" style="height: 28rem">
-            <img
-              src="images/fancycrave-284219-unsplash.jpg"
-              class="d-block w-100" alt="..." height=100%>
-          </div>
-          <!-- -------------------------------------------------- carousel 3 ------------------------------------------------------------------------------------- -->
-          <div class="carousel-item produits_star" style="height: 28rem">
-            <img
-              src="images/quotes-wallpaper-landscape-art-photography-vintage-1450153-pxhere.com.jpg"
-              class="d-block w-100" alt="..." height=100%>
-          </div>
-
         </div>
-        <!-- -------------------------------------------------- carousel commande --------------------------------------------------------------------------------- -->
+        <!-- -------------------------------------------------- carousel 2 ------------------------------------------------------------------------------------- -->
 
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="carousel-item produits_star" style="height: 28rem">
+          <img src="./front/images/fancycrave-284219-unsplash.jpg" class="d-block w-100" alt="..." height=100%>
+        </div>
+        <!-- -------------------------------------------------- carousel 3 ------------------------------------------------------------------------------------- -->
+        <div class="carousel-item produits_star" style="height: 28rem">
+          <img src="./front/images/quotes-wallpaper-landscape-art-photography-vintage-1450153-pxhere.com.jpg"
+            class="d-block w-100" alt="..." height=100%>
+        </div>
 
       </div>
+      <!-- -------------------------------------------------- carousel commande --------------------------------------------------------------------------------- -->
+
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
     </div>
-    <!-- -------------------------------------------------- CARDS ------------------------------------------------------------------------------------- -->
-    <div class="container pb-4 pt-2" id="articles">
+  </section>
+  <hr>
+
+  <section id="categorie">
+    <div class="container-fluid">
       <div class="row">
-    
-        <!-- Cards vyniles -->
-        <div class="col-12 col-sm-6 col-md-4 mt-2">
-          <div class="card mx-auto text-white card_article">
-            <img src="./img/vyniles.jpg" class="card-img" alt="..." width="100%">
-            <div class="card-img-overlay">
-              <h2 class="card-title">Juke-Box & Vyniles</h2>
-            </div>
-          </div>
+        <div class="col-12">
+          <h1>Categories</h1>
         </div>
-    
-        <!--  Cards Car -->
-        <div class="col-12 col-sm-6 col-md-4 mt-2">
-          <div class="card mx-auto text-white card_article">
-            <img src="./img/card-car.jpg" class="card-img" alt="..." width="100%">
-            <div class="card-img-overlay">
-              <h2 class="card-title">Voitures 70's</h2>
-            </div>
-          </div>
-        </div>
-    
-        <!--  Cards Gaming  -->
-    
-        <div class="col-12 col-sm-6 col-md-4 mt-2">
-          <div class="card mx-auto text-white card_article">
-            <img src="./img/gaming.jpg" class="card-img" alt="..." width="100%">
-            <div class="card-img-overlay">
-              <h2 class="card-title">Retro Gaming</h2>
-            </div>
-          </div>
-        </div>
-        <!-- Cards Bike -->
-    
-        <div class="col-12 col-sm-6 col-md-4 mt-2">
-          <div class="card mx-auto text-white card_article">
-            <img src="./img/bike.jpg" class="card-img" alt="..." width="100%">
-            <div class="card-img-overlay">
-              <h2 class="card-title">Vélo vintage</h2>
-            </div>
-          </div>
-        </div>
-        <!-- Cards Gun -->
-    
-        <div class="col-12 col-sm-6 col-md-4 mt-2">
-          <div class="card mx-auto text-white card_article">
-            <img src="./img/gun.jpg" class="card-img" alt="..." width="100%">
-            <div class="card-img-overlay">
-              <h2 class="card-title">Armes de guerres anciennes</h2>
-            </div>
-          </div>
-        </div>
-        <!-- Cards Art -->
-    
-        <div class="col-12 col-sm-6 col-md-4 mt-2">
-          <div class="card mx-auto text-white card_article">
-            <img src="./img/art.jpg" class="card-img" alt="..." width="100%">
-            <div class="card-img-overlay">
-              <h2 class="card-title">Art</h2>
-            </div>
-          </div>
-        </div>
-      </div> <!-- end div row -->
-    </div><!-- end div container -->
+      </div>
+      <!-- -------------------------------------------------- CARDS ------------------------------------------------------------------------------------- -->
+        <div class="row justify-content-center">
 
-   
-<!-- ---------------------------------------------Qui sommes-nous?------------------------------------------------------------------------------- -->
+          <!-- Cards vyniles -->
+          <div class="col-12 col-lg-6">
+            <div class="card mx-auto text-white card_article">
+                <a href="#" class="noStyle">
+              <img src="./front/img/vyniles.jpg" class="card-img" alt="..." width="100%">
+              <div class="card-img-overlay">
+                <h2 class="card-title">Juke-Box & Vinyles</h2>
+                <i class="far fa-arrow-alt-circle-right fleche"></i>
+              </div>
+              </a>
+            </div>
+          </div>
 
-   <div class="container-fluid" id="nous">
+          <!--  Cards Car -->
+          <div class="col-12 col-lg-6">
+            <div class="card mx-auto text-white card_article">
+              <a href="#" class="noStyle">
+              <img src="./front/img/card-car.jpg" class="card-img" alt="..." width="100%">
+              <div class="card-img-overlay">
+                <h2 class="card-title">Voitures 70's</h2>
+                <i class="far fa-arrow-alt-circle-right fleche"></i>
+              </div>
+            </a>
+            </div>
+          </div>
+
+          <!--  Cards Gaming  -->
+
+          <div class="col-12 col-lg-6 mt-2">
+            <div class="card mx-auto text-white card_article">
+              <a href="#" class="noStyle">
+              <img src="./front/img/gaming.jpg" class="card-img" alt="..." width="100%">
+              <div class="card-img-overlay">
+                <h2 class="card-title">Retro Gaming</h2>
+                <i class="far fa-arrow-alt-circle-right fleche"></i>
+              </div>
+            </a>
+            </div>
+          </div>
+          <!-- Cards Mobilier -->
+
+          <div class="col-12 col-lg-6 mt-2">
+            <div class="card mx-auto text-white card_article">
+              <a href="#" class="noStyle">
+              <img src="./front/img/mobilier.jpg" class="card-img" alt="..." width="100%">
+              <div class="card-img-overlay">
+                <h2 class="card-title">Mobilier</h2>
+                <i class="far fa-arrow-alt-circle-right fleche"></i>
+              </div>
+            </a>
+            </div>
+          </div>
+          <!-- Cards Gun -->
+
+          <div class="col-12 col-lg-6 mt-2">
+            <div class="card mx-auto text-white card_article">
+              <a href="#" class="noStyle">
+              <img src="./front/img/gun.jpg" class="card-img" alt="..." width="100%">
+              <div class="card-img-overlay">
+                <h2 class="card-title">Armes de guerres anciennes</h2>
+                <i class="far fa-arrow-alt-circle-right fleche"></i>
+              </div>
+            </a>
+            </div>
+          </div>
+          <!-- Cards Art -->
+
+          <div class="col-12 col-lg-6 mt-2">
+            <div class="card mx-auto text-white card_article">
+              <a href="#" class="noStyle">
+              <img src="./front/img/art.jpg" class="card-img" alt="..." width="100%">
+              <div class="card-img-overlay">
+                <h2 class="card-title">Art</h2>
+                <i class="far fa-arrow-alt-circle-right fleche"></i>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div> 
+      </div><!-- end div row -->
+      </div><!-- end div container -->
+  </section>
+  <hr>
+
+  <!-- ---------------------------------------------Qui sommes-nous?------------------------------------------------------------------------------- -->
+
+  <div class="container-fluid" id="nous">
     <div class="jumbotron jumbotron1">
 
-      <img src="https://images.unsplash.com/photo-1533274145039-f05a6d5713f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"class="mx-auto" id="pdf">
-    	  
-        <h1 class="display-4">Qui sommes-nous?</h1>
-    	  <p class="lead">Pawn Shop est la boutique de prêt sur gage la plus connue de France.Nous sommes une équipe de 6 copains  prêteur sur gages avec chacun une catégorie d'objet que l'on maitrise et sommes fan.Le rôle de notre entreprise est de  prêter de l'argent à des personnes qui nous apportent des objets de valeur et qu'ils laissent au prêteur sur gages. Des exemples d'objets qu'une personne peut laisser sont les armes de guerres anciennes, voitures année 70, jukebox et vinyle, rétro-gaming ainsi que tous ce qui est en rapport avec l'URSS. Nous faisons en quelques sorte revivre les articles les plus Mytiques de ces dernieres années. Notre relation envers les personnes désirant de refaire un retour dans le passé avec les choix d'articles que nous proposons ce font par passion .PawnShop à été pour la dixième années élu au 1er rang des sociètés les plus Performantes en therme de relation clients.</p>
-    	  <hr class="my-4">
-    	  <p>L’histoire : des particuliers apportent des objets qu’ils souhaitent vendre. Ces objets sont expertisés et s’ensuivent une négociation autour du prix et le paiement se fait en espèce. Vous avez aussi droit entre ces transactions à la vie de la boutique entre disputes et fous rire.</p>
-    	  <a class="btn btn-primary btn-lg" href="#" role="button">plus d'infos</a>
+      <img
+        src="./front/images/billet.jpeg"
+        class="mx-auto" id="pdf">
+
+      <h1 class="display-4">Qui sommes-nous?</h1>
+      <p class="lead">Pawn Shop est la boutique de prêt sur gage la plus connue de France.Nous sommes une équipe de 6
+        copains prêteur sur gages avec chacun une catégorie d'objet que l'on maitrise et sommes fan.Le rôle de notre
+        entreprise est de prêter de l'argent à des personnes qui nous apportent des objets de valeur et qu'ils laissent
+        au prêteur sur gages. Des exemples d'objets qu'une personne peut laisser sont les armes de guerres anciennes,
+        voitures année 70, jukebox et vinyle, rétro-gaming ainsi que tous ce qui est en rapport avec l'URSS. Nous
+        faisons en quelques sorte revivre les articles les plus Mytiques de ces dernieres années. Notre relation envers
+        les personnes désirant de refaire un retour dans le passé avec les choix d'articles que nous proposons ce font
+        par passion .PawnShop à été pour la dixième années élu au 1er rang des sociètés les plus Performantes en therme
+        de relation clients.</p>
+      <hr class="my-4">
+      <p>L’histoire : des particuliers apportent des objets qu’ils souhaitent vendre. Ces objets sont expertisés et
+        s’ensuivent une négociation autour du prix et le paiement se fait en espèce. Vous avez aussi droit entre ces
+        transactions à la vie de la boutique entre disputes et fous rire.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">plus d'infos</a>
     </div>
 
-   </div>
-<div class="container-fluid" style="padding:0;"id="Liens">
+  </div>
+  <div class="container-fluid" style="padding:0;" id="Liens">
     <footer class="footer mt-auto py-3 bg-dark text-white" id="Liens">
 
- <div class="row" style="margin-bottom: 0px; height: 120px;">
+      <div class="row" style="margin-bottom: 0px; height: 120px;">
 
-   <div class="mx-3">
-   	<ul>
-   		<li>
-    <a class="text-white" href="#">Produits du mois</a>
-    </li>
-    <li>
-    <a class="text-white" href="#">Retro-gamming</a>
-    </li>
-    <li>
-    <a class="text-white" href="#">URSS</a>
-</li>
-</ul>
-</div>
-<div>
-   	<ul>
-   		<li>
-    <a class="text-white" href="#">Voitures années 70</a>
-    </li>
-    <li>
-    <a class="text-white" href="#">Armes de guerres anciennes</a>
-    </li>
-    <li>
-    <a class="text-white" href="#">Juke-Box et vyniles</a>
-</li>
-</ul>
-</div>
+        <div class="mx-3">
+          <ul>
+            <li>
+              <a class="text-white" href="#">Produits du mois</a>
+            </li>
+            <li>
+              <a class="text-white" href="#">Retro-gamming</a>
+            </li>
+            <li>
+              <a class="text-white" href="#">URSS</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a class="text-white" href="#">Voitures années 70</a>
+            </li>
+            <li>
+              <a class="text-white" href="#">Armes de guerres anciennes</a>
+            </li>
+            <li>
+              <a class="text-white" href="#">Juke-Box et vyniles</a>
+            </li>
+            <li>
+              <a class="text-white" href="#">Mobilier</a>
+            </li>
+          </ul>
+        </div>
 
-<div>
-    <ul>
+        <div>
+          <ul>
 
-    <li>
-    <a class="text-white" href="#">Qui sommes nous ?</a>
-    </li>
-        <li>
-    <a class="text-white" href="https://wildcodeschool.com/">Wild Code School</a>
-    </li>
-</ul>
-</div>
+            <li>
+              <a class="text-white" href="#">Qui sommes nous ?</a>
+            </li>
+            <li>
+              <a class="text-white" href="https://wildcodeschool.com/">Wild Code School</a>
+            </li>
+          </ul>
+        </div>
 
 
-<div>     
-	<a class="btn btn-social btn-facebook" href="https://www.facebook.com/" role="button">
-	    <span class="fa fa-facebook text-white  bg-primary"></span></a>
+        <div>
+          <a class="btn btn-social btn-facebook" href="https://www.facebook.com/" role="button">
+            <span class="fa fa-facebook text-white  bg-primary"></span></a>
 
-	<a class="btn btn-social btn-twitter" href="https://www.twitter.com/" role="button">
-	    <span class="fa fa-twitter text-white  bg-primary"></span></a>
-</div>
- <div class="justify-content-end">
-  <form>
-    <div class="row">
-  <div class="form-group mx-3 my-1">
-    <label for="exampleFormControlInput1">Contactez nous</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Votre adresse mail">
+          <a class="btn btn-social btn-twitter" href="https://www.twitter.com/" role="button">
+            <span class="fa fa-twitter text-white  bg-primary"></span></a>
+        </div>
+        <div class="justify-content-end">
+          <form>
+            <div class="row">
+              <div class="form-group mx-3 my-1">
+                <label for="exampleFormControlInput1">Contactez nous</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Votre adresse mail">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">votre message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  style="width: 400px"></textarea>
+                <button class="btn btn-primary" type="submit">Envoyer</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-muted mx-auto font-weight-light font-italic" style="width: 500px;">© copyright - 2019 - made by
+        the best development team ever
+      </div>
+    </footer>
   </div>
-
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">votre message</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width: 400px"></textarea>
-      <button class="btn btn-primary" type="submit">Envoyer</button>
-  </div>
-</div>
-</form>
- </div>
-   </div>
-   <div class="text-muted mx-auto font-weight-light font-italic"style="width: 500px;">© copyright - 2019  - made by the best development team ever
-   </div>     
-  </footer>
- </div>
 
 
 
