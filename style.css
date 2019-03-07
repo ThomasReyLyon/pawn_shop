@@ -182,3 +182,27 @@ ul {
 .noStyle:hover .card-title {
   color: #ffff;
 }
+/*footer*/
+
+.bg-grey {
+    background-color: #f4f4f4;
+}
+
+footer {
+    color: #666!important;
+    font-size: 0.85rem;
+}
+
+.btn-socialMedia {
+    font-size: 3rem;
+}
+.copyright{
+    font-size: 0.7rem;
+}
+
+
+.moodal{
+  text-align: center;
+  font-family: 'rockstar', cursive;
+  font-size: 2em;
+}
