@@ -16,73 +16,67 @@
   <title>Pawn Shop</title>
 </head>
 
-<body class="poster_list">
+<body>
   <header>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom bg-dark">
       <p class="navbar-brand text-white my-0 mr-md-auto">&#xe04f;Pawn&#x00e4;Shop&#xe050;</p>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-white" href="#">Qui sommes-nous?</a>
-        <a class="p-2 text-white" href="#">Produits du mois</a>
+        <a class="m-2 liens_nav" href="#">Qui sommes-nous?</a>
       </nav>
       <div class="dropdown mr-md-5">
-        <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button"
-          aria-haspopup="true" aria-expanded="false">Categories</a>
+        <a class="m-2 dropdown-toggle liens_nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Categories</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Voitures années 70</a>
-          <a class="dropdown-item" href="Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
-          <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
-          <a class="dropdown-item" href="#">URSS</a>
-          <a class="dropdown-item" href="Page_secondaire/page_retro.html">Retro-gaming</a>
+          <a class="dropdown-item" href="./Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
+          <a class="dropdown-item" href="./Page_secondaire/maquettejo2.html">Juke-Box et vyniles</a>
+          <a class="dropdown-item" href="./Page_secondaire/affiche.html">Affiches</a>
+          <a class="dropdown-item" href="./Page_secondaire/page_retro.html">Retro-gaming</a>
+          <a class="dropdown-item" href="./Page_secondaire/mobilier.html">Mobilier</a>
         </div>
       </div>
-      <a class="btn btn-light" data-toggle="modal" data-target=".modal_seConnecter" href="#">Se connecter</a>
+      <a class="btn btn-light register" data-toggle="modal" data-target=".bd-example-modal-xl" href="#">Se connecter</a>
       <!-- Modal Se connecter du menu-->
-      <div class="modal fade modal_seConnecter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+      <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <main class="login-form">
-              <div class="cotainer">
-                <div class="row justify-content-center">
-                  <div class="col-md-8">
-                    <div class="card">
-                      <div class="card-header">Se connecter</div>
-                      <div class="card-body">
-                        <form action="" method="">
-                          <div class="form-group row">
-                            <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail</label>
-                            <div class="col-md-6">
-                              <input type="text" id="email_address" class="form-control" name="email-address" required
-                                autofocus>
-                            </div>
-                          </div>
-
-                          <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Mot de passe</label>
-                            <div class="col-md-6">
-                              <input type="password" id="password" class="form-control" name="password" required>
-                            </div>
-                          </div>
-
-                          <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                              <div class="checkbox">
-                                <label><input type="checkbox" name="remember">se souvenir</label>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-6 offset-md-4">
-                            <button type="submit" class="btn btn-primary">Connexion</button>
-                            <a href="#" class="btn btn-link">Mot de passe oublié?</a>
-                          </div>
-                        </form>
+          <div class="modal-content bg-dark text-white">
+            <div class="cotainer">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <h3 class="moodal">Se connecter</h3>
+                  <form action="" method="">
+                    <div class="row">
+                      <label for="email_address" class="moodal col-md-4 col-form-label text-md-right">E-Mail</label>
+                      <div class="col-md-6">
+                        <input type="text" id="email_address" class="form-control" name="email-address" required
+                          autofocus>
                       </div>
                     </div>
-                  </div>
+
+                    <div class="row">
+                      <label for="password" class="moodal col-md-4 col-form-label text-md-right">Mot de passe</label>
+                      <div class="col-md-6">
+                        <input type="password" id="password" class="form-control" name="password" required>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 offset-md-4">
+                        <div class="moodal checkbox">
+                          <label><input type="checkbox" name="remember">se souvenir</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="moodal col-md-6 offset-md-4">
+                      <button type="submit" class="btn btn-primary">Connexion</button>
+                      <a href="#" class="btn btn-link">Mot de passe oublié?</a>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </main>
+            </div>
           </div>
         </div>
       </div>
