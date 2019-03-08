@@ -34,7 +34,6 @@ h1 {
 
 .register:hover {
   opacity: 1;
-  font-size: 1.1rem;
   box-shadow: 1px 1px 1px 1px;
   transition: 250ms;
 }
@@ -158,9 +157,15 @@ ul {
 }
 
 .card-img-overlay {
-  padding-top: 5rem;
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
+
+@media screen and (max-width : 576px) {
+  .card-img-overlay {
+    padding-top: 5rem;
+  }
+}
+
 
 .fa-arrow-alt-circle-right {
   font-size: 3rem;
@@ -187,9 +192,13 @@ footer {
 
 }
 
-.card_article:hover .fleche {
-    color:rgba(211,211,211,1);;
-    transition: 250ms;
+.card_article{
+  opacity: 1;
+}
+
+.card_article:hover img{
+  opacity: 0.5;
+  transition : 1000ms;
 }
 .noStyle {
   color: #ffff;
@@ -237,43 +246,12 @@ footer {
   text-shadow: 3px 3px 3px grey;
 }
 
-.register {
-  font-family: "rockstar", cursive;
-}
 
-.register:hover {
-  opacity: 1;
-  font-size: 1.1rem;
-  box-shadow: 1px 1px 1px 1px;
-  transition: 250ms;
-}
 h1 {
   font-family: "rockstar", cursive;
 }
 
-@font-face {
-  font-family: "york";
-  src: url("fonts2/yorkwhiteletter.otf"), url("fonts2/yorkwhiteletter.ttf");
-}
-@font-face {
-  font-family: "shinyday";
-  src: url("fonts2/Shinyday\ free\ personal\ use.ttf");
-}
-@font-face {
-  font-family: "rockstar";
-  src: url("fonts2/rockstar\ free\ personal\ use.ttf");
-}
 
-@font-face {
-  font-family: "nashvill";
-  src: url("fonts2/NASHVILL.TTF");
-}
-
-
-.navbar-brand {
-  font-family: "york";
-  font-size: 4rem;
-}
 
 .fas {
   float: right;
