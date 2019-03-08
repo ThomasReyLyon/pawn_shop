@@ -51,7 +51,6 @@ nav {
 
 .register:hover {
   opacity: 1;
-  font-size: 1.1rem;
   box-shadow: 1px 1px 1px 1px;
   transition: 250ms;
 }
