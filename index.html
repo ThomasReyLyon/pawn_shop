@@ -370,6 +370,19 @@
     </div>
   </section>
   <hr>
+
+  <section>
+ 
+    <div><a id="cRetour" class="cInvisible" href="#"></a></div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      window.onscroll = function(ev) {
+        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+      };
+    });
+    </script>
+    </section>
+
 <!-- Footer -->
   <footer class="page-footer font-small bg-grey pt-4">
     <div class="container-fluid text-center text-md-left">
