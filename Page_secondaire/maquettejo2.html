@@ -28,11 +28,11 @@
           aria-expanded="false">Categories</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Voitures années 70</a>
-          <a class="dropdown-item" href="./Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
-          <a class="dropdown-item" href="./Page_secondaire/maquettejo2.html">Juke-Box et vyniles</a>
-          <a class="dropdown-item" href="./Page_secondaire/affiche.html">Affiches</a>
-          <a class="dropdown-item" href="./Page_secondaire/page_retro.html">Retro-gaming</a>
-          <a class="dropdown-item" href="./Page_secondaire/mobilier.html">Mobilier</a>
+          <a class="dropdown-item" href="./page-arme.html">Armes de guerres anciennes</a>
+          <a class="dropdown-item" href="./maquettejo2.html">Juke-Box et vyniles</a>
+          <a class="dropdown-item" href="./affiche.html">Affiches</a>
+          <a class="dropdown-item" href="./page_retro.html">Retro-gaming</a>
+          <a class="dropdown-item" href="./mobilier.html">Mobilier</a>
         </div>
       </div>
       <a class="btn btn-light register" data-toggle="modal" data-target=".bd-example-modal-xl" href="#">Se connecter</a>
@@ -581,68 +581,119 @@
     </div>
   </div>
 </div>
+
+
+<section>
+ 
+  <div><a id="cRetour" class="cInvisible" href="#"></a></div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    window.onscroll = function(ev) {
+      document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+    };
+  });
+  </script>
+  </section>
+
   
-  <footer class="page-footer font-small bg-grey pt-4">
-    <div class="container-fluid text-center text-md-left">
-      <div class="row">
-          <div class="col-md-3 mb-md-0 mb-3 pl-5">
-          <a class="btn-socialMedia">
-            <i class="fab fa-facebook-square"></i></a>
-          <a class="btn-socialMedia">
-            <i class="fab fa-twitter-square"></i>
-          </a>
-        </div>
-        <div class="col-md-3 mb-md-0 mb-3">
-            <ul class="list-unstyled">
-            <li>
-              <a class="text-muted" href="#">Produits du mois</a>
-            </li>
-            <li>
-              <a class="text-muted" href="#">Retro-gamming</a>
-            </li>
-            <li>
-              <a class="text-muted" href="#">URSS</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 mb-md-0 mb-3">
-          <ul class="list-unstyled">
-            <li>
-              <a class="text-muted" href="#">Voitures années 70</a>
-            </li>
-            <li>
-              <a class="text-muted" href="#">Armes de guerres anciennes</a>
-            </li>
-            <li>
-              <a class="text-muted" href="#">Juke-Box et vyniles</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 mb-md-0 mb-3">
-          <ul class="list-unstyled">
-
-            <li>
-              <a class="text-muted" href="#">Qui sommes nous</a>
-            </li>
-            <li>
-              <a class="text-muted" href="#">Contactez nous</a>
-            </li>
-            <li>
-              <a class="text-muted" href="https://wildcodeschool.com/">Wild Code School</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-xs-12">
-            <div class="text-muted font-weight-light font-italic">© copyright - 2019</div>
-        </div>
+<!-- Footer -->
+<footer class="page-footer font-small bg-grey pt-4">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-xs-12 col-md-2 offset-md-1">
+        <a class="btn-socialMedia">
+          <i class="fab fa-facebook-square fa-lg"></i></a>
+        <a class="btn-socialMedia">
+          <i class="fab fa-twitter-square fa-lg"></i>
+        </a>
       </div>
+        <!-- Bouton contact-->
+      <div class="col-xs-12 col-md-2">
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
+            Contactez nous
+          </button>
 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+              <div class="container modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title text-white moodal" id="exampleModalLabel">Contactez nous</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control"
+                      style="  font-family: 'rockstar', cursive;  font-size: 2em;" placeholder="Votre email"
+                      aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="moodal input-group-text">Votre message</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer bg-dark">
+                  <button type="button" class="btn btn-danger moodal" data-dismiss="modal">Annuler</button>
+                  <button type="button" class="btn btn-primary moodal">Envoyer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- fin du bouton contact-->
+      </div>
+      <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="./maquettejo2.html">Juke-Box et vyniles</a>
+          </li>
+          <li>
+            <a class="text-muted" href="./page_retro.html">Retro-gamming</a>
+          </li>
+          <li>
+            <a class="text-muted" href="./affiche.html">Affiches</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="#">Voitures années 70</a>
+          </li>
+          <li>
+            <a class="text-muted" href="./page-arme.html">Armes de guerres anciennes</a>
+          </li>
+          <li>
+            <a class="text-muted" href="./mobilier.html">Mobilier</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
+        <ul class="list-unstyled">
+
+          <li>
+            <a class="text-muted" href="../index.html#NOUS">Qui sommes nous</a>
+          </li>
+          <li>
+            <a class="text-muted"  href="https://wildcodeschool.com/">Wild Code School</a>
+          </li>
+          <li>
+              <div class="text-muted font-weight-light font-italic">© copyright - 2019</div>
+          </li>
+        </ul>
+      </div>
     </div>
-    </div>
-
-
-
-  </footer>
+  </div>
+  </div>
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
