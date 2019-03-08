@@ -12,11 +12,6 @@ header {
 h1 {
   font-family: "rockstar", cursive;
 }
-.liens_nav {
-  font-family: "rockstar", cursive;
-  font-size: 1.6rem;
-  color: white;
-}
 
 .navbar-brand:hover {
   color: white;
@@ -39,7 +34,6 @@ h1 {
 
 .register:hover {
   opacity: 1;
-  font-size: 1.1rem;
   box-shadow: 1px 1px 1px 1px;
   transition: 250ms;
 }
@@ -163,17 +157,48 @@ ul {
 }
 
 .card-img-overlay {
-  padding-top: 5rem;
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
+
+@media screen and (max-width : 576px) {
+  .card-img-overlay {
+    padding-top: 5rem;
+  }
+}
+
 
 .fa-arrow-alt-circle-right {
   font-size: 3rem;
 }
 
 .card_article:hover .fleche {
-    color:rgba(211,211,211,1);;
+    color: #343a40;
     transition: 250ms;
+}
+.noStyle {
+  color: #ffff;
+}
+
+.noStyle:hover .card-title {
+  color: #ffff;
+}
+
+/* CAROUSSEL */
+
+footer {
+  color: #666 !important;
+  font-size: 0.85rem;
+}
+
+}
+
+.card_article{
+  opacity: 1;
+}
+
+.card_article:hover img{
+  opacity: 0.5;
+  transition : 1000ms;
 }
 .noStyle {
   color: #ffff;
@@ -190,30 +215,6 @@ ul {
 
 
 
-
-
-
-
-
-
-
-
-html,
-body {
-  margin: 0;
-  color: rgba(0, 0, 0, 0.54);
-  background: #ececec;
-  font-family: "Raleway", sans-serif;
-}
-header {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-nav {
-  font-family: "rockstar", cursive;
-  font-size: 1.6rem;
-}
-
 .nav-link,
 .dropdown-item {
   font-family: "rockstar", cursive !important;
@@ -226,9 +227,10 @@ nav {
 
 .liens_nav {
   font-family: "rockstar", cursive;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: white;
 }
+
 
 .navbar-brand:hover {
   color: white;
@@ -245,46 +247,12 @@ nav {
   text-shadow: 3px 3px 3px grey;
 }
 
-.register {
-  font-family: "rockstar", cursive;
-}
 
-.register:hover {
-  opacity: 1;
-  font-size: 1.1rem;
-  box-shadow: 1px 1px 1px 1px;
-  transition: 250ms;
-}
 h1 {
   font-family: "rockstar", cursive;
 }
 
-@font-face {
-  font-family: "york";
-  src: url("fonts2/yorkwhiteletter.otf"), url("fonts2/yorkwhiteletter.ttf");
-}
-@font-face {
-  font-family: "shinyday";
-  src: url("fonts2/Shinyday\ free\ personal\ use.ttf");
-}
-@font-face {
-  font-family: "rockstar";
-  src: url("fonts2/rockstar\ free\ personal\ use.ttf");
-}
 
-@font-face {
-  font-family: "nashvill";
-  src: url("fonts2/NASHVILL.TTF");
-}
-
-header {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.navbar-brand {
-  font-family: "york";
-  font-size: 4rem;
-}
 
 .fas {
   float: right;
@@ -312,11 +280,6 @@ header {
   color: white;
 }
 
-.card-title {
-  font-family: "nashvill";
-  font-size: 1.5rem;
-  color: white;
-}
 .card-text {
   font-family: "rockstar";
   font-size: 1rem;
@@ -340,6 +303,9 @@ header {
   background-color: orange;
   font-family: "rockstar";
   font-size: 1rem;
+}
+.more_info a {
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .more_info:hover {
@@ -493,3 +459,63 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 .carousel-control-prev-icon{
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23343a40' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
   }
+
+  .team{
+    text-align: center;
+  }
+  
+  .text-nous{
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    line-height: 1.5rem;
+  }
+  
+  .moodal{
+    text-align: center;
+    font-family: 'rockstar', cursive;
+    font-size: 2em;
+  }
+
+  /* Page index -> cursor du courousel */
+  .carouselIndicators {
+  color:grey;
+  padding-left:48.5%;
+}
+
+.list-inline-item {
+  cursor: pointer;
+}
+
+/* Bouton retour en haut */
+a#cRetour{
+  border-radius:3px;
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+  color:#fff;
+  background:rgba(0, 0, 0, 0.25);
+  position:fixed;
+  right:20px;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a#cRetour:before{ content: "\25b2"; }
+a#cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+a#cRetour.cInvisible{
+  bottom:-35px;
+  opacity:0;
+  transition:all ease-in 0.5s;
+}
+
+a#cRetour.cVisible{
+  bottom:20px;
+  opacity:1;
+}

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang=fr>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300|Lilita+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Pawn Shop</title>
+</head>
+
+<body>
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom bg-dark">
+      <p class="navbar-brand text-white my-0 mr-md-auto"><a href="../index.html">&#xe04f;Pawn&#x00e4;Shop&#xe050;</a></p>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="m-2 liens_nav" href="../index.html#NOUS">Qui sommes-nous?</a>
+      </nav>
+      <div class="dropdown mr-lg-5">
+        <a class="m-2 dropdown-toggle liens_nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="./Voiture70.html">Voitures années 70</a>
+          <a class="dropdown-item" href="./page-arme.html">Armes de guerres anciennes</a>
+          <a class="dropdown-item" href="./maquettejo2.html">Juke-Box et vyniles</a>
+          <a class="dropdown-item" href="./affiche.html">Affiches</a>
+          <a class="dropdown-item" href="./page_retro.html">Retro-gaming</a>
+          <a class="dropdown-item" href="./mobilier.html">Mobilier</a>
+        </div>
+      </div>
+      <a class="btn btn-light register" data-toggle="modal" data-target=".bd-example-modal-xl" href="#">Se connecter</a>
+      <!-- Modal Se connecter du menu-->
+      <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content bg-dark text-white">
+            <div class="cotainer">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <h3 class="moodal">Se connecter</h3>
+                  <form action="" method="">
+                    <div class="row">
+                      <label for="email_address" class="moodal col-md-4 col-form-label text-md-right">E-Mail</label>
+                      <div class="col-md-6">
+                        <input type="text" id="email_address" class="form-control" name="email-address" required
+                          autofocus>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <label for="password" class="moodal col-md-4 col-form-label text-md-right">Mot de passe</label>
+                      <div class="col-md-6">
+                        <input type="password" id="password" class="form-control" name="password" required>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 offset-md-4">
+                        <div class="moodal checkbox">
+                          <label><input type="checkbox" name="remember">se souvenir</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="moodal col-md-6 offset-md-4">
+                      <button type="submit" class="btn btn-primary">Connexion</button>
+                      <a href="#" class="btn btn-link">Mot de passe oublié?</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container head_categorie pb-3 pt-3">
+    <div class="row justify-content-center pt-4">
+      <div class="jumbotron presentation_categorie col-12">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h1 class="display-4">Mobilier vintage</h1>
+            <p class="lead">Bienvenu sur notre page dédié au mobilier vintage</p>
+            <hr class="my-4">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur
+              explicabo commodi enim nemo blanditiis modi similique nesciunt. Expedita laudantium aliquam doloribus non
+              aut aliquid eaque iure itaque et provident.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- TEMPLATE PRODUIT-->
+
+  <section id="produits">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/mobilier/banc.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#bancdejardin">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Banc de jardin</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1970</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/mobilier/soupiere.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#soupiere">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Soupière</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>XVIIIe</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/mobilier/hamac.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#hamac">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Hamac</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1990</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>49€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/mobilier/bancDePlage.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#bancDePlage">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Banc de plage</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1988</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>399€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/mobilier/etagere.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#etagere">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Étagère</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1951</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>29€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/mobilier/meuble.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#semainier">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Semainier</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1990</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>199€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/mobilier/chaise.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#table">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Table</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1990</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>199€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/mobilier/ensembleDeCuisine.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#cuisine">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Cuisine d'époque</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1972</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>899€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/mobilier/ensembleDeSalon.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#ensembleDeSalon">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Ensemble de salon</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1879</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>1099€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/mobilier/casier.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#etagere2">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Étagère</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1921</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>39€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- MODAL-->
+
+  <div class="modal fade" id="bancdejardin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Banc de jardin</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/mobilier/banc.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="soupiere" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Soupière</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/mobilier/soupiere.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="hamac" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Hamac</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/mobilier/hamac.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bancDePlage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Banc de plage</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/mobilier/bancDePlage.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="etagere" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Étagère</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/mobilier/etagere.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="semainier" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Semainier</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/mobilier/meuble.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="table" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Table</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/mobilier/chaise.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="cuisine" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Cuisine d'époque</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/mobilier/ensembleDeCuisine.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ensembleDeSalon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Ensemble de salon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/mobilier/ensembleDeSalon.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="etagere2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Étagère</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="./images/mobilier/casier.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-grey pt-4">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-xs-12 col-md-2 offset-md-1">
+        <a class="btn-socialMedia">
+          <i class="fab fa-facebook-square fa-lg"></i></a>
+        <a class="btn-socialMedia">
+          <i class="fab fa-twitter-square fa-lg"></i>
+        </a>
+      </div>
+        <!-- Bouton contact-->
+      <div class="col-xs-12 col-md-2">
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
+            Contactez nous
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+              <div class="container modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title text-white moodal" id="exampleModalLabel">Contactez nous</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body bg-dark">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control"
+                      style="  font-family: 'rockstar', cursive;  font-size: 2em;" placeholder="Votre email"
+                      aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="moodal input-group-text">Votre message</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer bg-dark">
+                  <button type="button" class="btn btn-danger moodal" data-dismiss="modal">Annuler</button>
+                  <button type="button" class="btn btn-primary moodal">Envoyer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- fin du bouton contact-->
+      </div>
+      <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="./maquettejo2.html">Juke-Box et vyniles</a>
+          </li>
+          <li>
+            <a class="text-muted" href="./page_retro.html">Retro-gamming</a>
+          </li>
+          <li>
+            <a class="text-muted" href="./affiche.html">Affiches</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="./Voiture70.html">Voitures années 70</a>
+          </li>
+          <li>
+            <a class="text-muted" href="./page-arme.html">Armes de guerres anciennes</a>
+          </li>
+          <li>
+            <a class="text-muted" href="./mobilier.html">Mobilier</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
+        <ul class="list-unstyled">
+
+          <li>
+            <a class="text-muted" href="../index.html#NOUS">Qui sommes nous</a>
+          </li>
+          <li>
+            <a class="text-muted"  href="https://wildcodeschool.com/">Wild Code School</a>
+          </li>
+          <li>
+              <div class="text-muted font-weight-light font-italic">© copyright - 2019</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+
+    <section>
+ 
+      <div><a id="cRetour" class="cInvisible" href="#"></a></div>
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        window.onscroll = function(ev) {
+          document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+        };
+      });
+      </script>
+      </section>
+  
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
+</body>
+
+</html>

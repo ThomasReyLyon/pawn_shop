@@ -2,8 +2,8 @@
 <html lang=fr>
 
 <head>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300|Lilita+One" rel="stylesheet">
@@ -20,70 +20,64 @@
 <body class="poster_list">
   <header>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom bg-dark">
-      <p class="navbar-brand text-white my-0 mr-md-auto">&#xe04f;Pawn&#x00e4;Shop&#xe050;</p>
+      <p class="navbar-brand text-white my-0 mr-md-auto"><a href="../index.html">&#xe04f;Pawn&#x00e4;Shop&#xe050;</a></p>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-white" href="#">Qui sommes-nous?</a>
-        <a class="p-2 text-white" href="#">Produits du mois</a>
+        <a class="m-2 liens_nav" href="../index.html#NOUS">Qui sommes-nous?</a>
       </nav>
-      <div class="dropdown mr-md-5">
-        <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button"
-          aria-haspopup="true" aria-expanded="false">Categories</a>
+      <div class="dropdown mr-lg-5">
+        <a class="m-2 dropdown-toggle liens_nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Categories</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Voitures années 70</a>
-          <a class="dropdown-item" href="Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
-          <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
-          <a class="dropdown-item" href="#">URSS</a>
-          <a class="dropdown-item" href="Page_secondaire/page_retro.html">Retro-gaming</a>
+          <a class="dropdown-item" href="./Voiture70.html">Voitures années 70</a>
+          <a class="dropdown-item" href="./page-arme.html">Armes de guerres anciennes</a>
+          <a class="dropdown-item" href="./maquettejo2.html">Juke-Box et vyniles</a>
+          <a class="dropdown-item" href="./affiche.html">Affiches</a>
+          <a class="dropdown-item" href="./page_retro.html">Retro-gaming</a>
+          <a class="dropdown-item" href="./mobilier.html">Mobilier</a>
         </div>
       </div>
-      <a class="btn btn-light" data-toggle="modal" data-target=".modal_seConnecter" href="#">Se connecter</a>
+      <a class="btn btn-light register" data-toggle="modal" data-target=".bd-example-modal-xl" href="#">Se connecter</a>
       <!-- Modal Se connecter du menu-->
-      <div class="modal fade modal_seConnecter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+      <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <main class="login-form">
-              <div class="cotainer">
-                <div class="row justify-content-center">
-                  <div class="col-md-8">
-                    <div class="card">
-                      <div class="card-header">Se connecter</div>
-                      <div class="card-body">
-                        <form action="" method="">
-                          <div class="form-group row">
-                            <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail</label>
-                            <div class="col-md-6">
-                              <input type="text" id="email_address" class="form-control" name="email-address" required
-                                autofocus>
-                            </div>
-                          </div>
-
-                          <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Mot de passe</label>
-                            <div class="col-md-6">
-                              <input type="password" id="password" class="form-control" name="password" required>
-                            </div>
-                          </div>
-
-                          <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                              <div class="checkbox">
-                                <label><input type="checkbox" name="remember">se souvenir</label>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-6 offset-md-4">
-                            <button type="submit" class="btn btn-primary">Connexion</button>
-                            <a href="#" class="btn btn-link">Mot de passe oublié?</a>
-                          </div>
-                        </form>
+          <div class="modal-content bg-dark text-white">
+            <div class="cotainer">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <h3 class="moodal">Se connecter</h3>
+                  <form action="" method="">
+                    <div class="row">
+                      <label for="email_address" class="moodal col-md-4 col-form-label text-md-right">E-Mail</label>
+                      <div class="col-md-6">
+                        <input type="text" id="email_address" class="form-control" name="email-address" required
+                          autofocus>
                       </div>
                     </div>
-                  </div>
+
+                    <div class="row">
+                      <label for="password" class="moodal col-md-4 col-form-label text-md-right">Mot de passe</label>
+                      <div class="col-md-6">
+                        <input type="password" id="password" class="form-control" name="password" required>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 offset-md-4">
+                        <div class="moodal checkbox">
+                          <label><input type="checkbox" name="remember">se souvenir</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="moodal col-md-6 offset-md-4">
+                      <button type="submit" class="btn btn-primary">Connexion</button>
+                      <a href="#" class="btn btn-link">Mot de passe oublié?</a>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </main>
+            </div>
           </div>
         </div>
       </div>
@@ -95,10 +89,15 @@
       <div class="jumbotron presentation_categorie col-12">
         <div class="row justify-content-center">
           <div class="col-12 titreVoiture">
-            <h1 class="display-4">"70's Cars TV"</h1>
-            <p class="lead">Bienvenu sur notre page dédié aux autos des années 70
-            <hr class="my-4">
-            <p>voici les fameuses autos de nos séries Tv d'enfance des années 70.Ces véhicules sont entièrement rénovés à l'origine et vendu par des passionnées</p>
+            
+            <div class="titreVoiture" style="background-image: url('images/img_Voiture_70_80/Motif_retro_70_80/Motif_speed.jpg');
+            background-size: 50% auto;color:black;border:1px solid grey;">
+                <h1 class="display-4" > "CAR'S TV 70-80" </h1>
+                <p class="lead" style="font-size:30px;font-weight: bold;background-color:#ECECEC;margin:20px 20px;">Bienvenu sur notre page dédié aux autos des années 70 et 80.</p>
+                <hr class="my-4" >
+                <p style="font-size:20px;30px;font-weight: bold;background-color:#ECECEC;margin:20px 20px;">Voici les fameuses autos de nos séries TV d'enfance des années 70*80.</p>
+            </div>  
+              
           </div>
         </div>
       </div>
@@ -114,17 +113,17 @@
 
         <!-- DODGE CHARGE GENERA LEE -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
-          <img class="img-responsive" src="./images/img_Voiture70/dodge_charger_general_lee.jpg" alt="dodge_charger_general_lee">
-          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#test">Plus d'infos</button>
+          <img class="img-responsive" src="./images/img_Voiture_70_80//Voiture/dodge_charger_general_lee.jpg" alt="dodge_charger_general_lee">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#dodge">Plus d'infos</button>
           <div class="produits_titre">
-            <h2>Un joli titre</h2>
+            <h2>La DODGE CHALLENGER </h2>
             <hr>
             <div class="row">
               <div class="col-6">
-                <p>Année 1990</p>
+                <p>Année 1975</p>
               </div>
               <div class="col-6 text-right">
-                <p>199$</p>
+                <p>30000€</p>
               </div>
             </div>
           </div>
@@ -133,17 +132,17 @@
 
         <!-- FERRARI 308 GTS MAGNUM-->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
-          <img class="img-responsive" src="./images/img_Voiture70/Ferrari_308_GTS_Magnum.jpg" alt="Ferrari_308_GTS_Magnum">
-          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#test">Plus d'infos</button>
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Ferrari_308_GTS_Magnum.jpg" alt="Ferrari_308_GTS_Magnum">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#magnum">Plus d'infos</button>
           <div class="produits_titre">
-            <h2>Un joli titre</h2>
+            <h2>LA FERRARI 308 GTS </h2>
             <hr>
             <div class="row">
               <div class="col-6">
-                <p>Année 1990</p>
+                <p>Année 1973</p>
               </div>
               <div class="col-6 text-right">
-                <p>199$</p>
+                <p>60000€</p>
               </div>
             </div>
           </div>
@@ -152,17 +151,17 @@
 
         <!-- FORD TORINO STARSKY ET HUTCH-->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
-          <img class="img-responsive" src="./images/img_Voiture70/Ford_Torino_Starsky_Hutch.jpg" alt="Ford_Torino_Starsky_Hutch">
-          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#test">Plus d'infos</button>
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Ford_Torino_Starsky_Hutch.jpg" alt="Ford_Torino_Starsky_Hutch">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#ford">Plus d'infos</button>
           <div class="produits_titre">
-            <h2>Un joli titre</h2>
+            <h2>LA FORD TORINO </h2>
             <hr>
             <div class="row">
               <div class="col-6">
-                <p>Année 1990</p>
+                <p>Année 1972</p>
               </div>
               <div class="col-6 text-right">
-                <p>199$</p>
+                <p>25000€$</p>
               </div>
             </div>
           </div>
@@ -171,17 +170,17 @@
 
          <!-- ASTON MARTIN BRETT SAINT CLAIR-->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
-          <img class="img-responsive" src="./images/img_Voiture70/Aston_Martin_Brett .jpg" alt="Aston_Martin_Brett ">
-          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#test">Plus d'infos</button>
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Aston_Martin_Brett.jpg" alt="Aston_Martin_Brett ">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#aston">Plus d'infos</button>
           <div class="produits_titre">
-            <h2>Un joli titre</h2>
+            <h2>ASTON MARTIN </h2>
             <hr>
             <div class="row">
               <div class="col-6">
-                <p>Année 1990</p>
+                <p>Année 1977</p>
               </div>
               <div class="col-6 text-right">
-                <p>199$</p>
+                <p>110000€</p>
               </div>
             </div>
           </div>
@@ -191,17 +190,17 @@
 
          <!-- FORD MUSTANG BULLIT-->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
-          <img class="img-responsive" src="./images/img_Voiture70/Ford_Mustang_Bullit.jpg" alt="Ford_Mustang_Bullit">
-          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#test">Plus d'infos</button>
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Ford_Mustang_Bullit.jpg" alt="Ford_Mustang_Bullit">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#mustang">Plus d'infos</button>
           <div class="produits_titre">
-            <h2>Un joli titre</h2>
+            <h2>FORD MUSTANG BULLIT</h2>
             <hr>
             <div class="row">
               <div class="col-6">
-                <p>Année 1990</p>
+                <p>Année 1979</p>
               </div>
               <div class="col-6 text-right">
-                <p>199$</p>
+                <p>50000€</p>
               </div>
             </div>
           </div>
@@ -209,17 +208,17 @@
 
          <!-- COCCINELLE FILM-->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
-          <img class="img-responsive" src="./images/img_Voiture70/Coccinelle-disney.jpg" alt="Coccinelle-disney">
-          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#test">Plus d'infos</button>
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Coccinelle_disney.jpg" alt="Coccinelle-disney">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#coccinelle">Plus d'infos</button>
           <div class="produits_titre">
-            <h2>Un joli titre</h2>
+            <h2>LA COCCINELLE</h2>
             <hr>
             <div class="row">
               <div class="col-6">
-                <p>Année 1990</p>
+                <p>Année 1975</p>
               </div>
               <div class="col-6 text-right">
-                <p>199$</p>
+                <p>20000€</p>
               </div>
             </div>
           </div>
@@ -227,36 +226,36 @@
 
          <!--GMC SIERRA HOMME QUI TOMBE A PIC-->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
-          <img class="img-responsive" src="./images/img_Voiture70/GMC_Sierra_Tombe_pic.jpg" alt="GMC_Sierra_Tombe_pic">
-          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#test">Plus d'infos</button>
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/GMC_Sierra_Tombe_pic.jpg" alt="GMC_Sierra_Tombe_pic">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#sierra">Plus d'infos</button>
           <div class="produits_titre">
-            <h2>Un joli titre</h2>
+            <h2>GMC SIERRA</h2>
             <hr>
             <div class="row">
               <div class="col-6">
-                <p>Année 1990</p>
+                <p>Année 1983</p>
               </div>
               <div class="col-6 text-right">
-                <p>199$</p>
+                <p>15000€</p>
               </div>
             </div>
           </div>
         </div>
 
         
-        <!-- Mercedes-R107-380-SL L'AMOUR DU RISQUE -->
+        <!-- MERCEDES-R107-380-SL L'AMOUR DU RISQUE -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
-          <img class="img-responsive" src="./images/img_Voiture70/Mercedes-R107-380-SL-80-85-01.jpg" alt="Mercedes_R107_450SL">
-          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#test">Plus d'infos</button>
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Mercedes_R107_380_SL.jpg" alt="Mercedes_R107_450SL">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#merco">Plus d'infos</button>
           <div class="produits_titre">
-            <h2>Un joli titre</h2>
+            <h2>MERCEDES R107</h2>
             <hr>
             <div class="row">
               <div class="col-6">
-                <p>Année 1990</p>
+                <p>Année 1981</p>
               </div>
               <div class="col-6 text-right">
-                <p>199$</p>
+                <p>30000€</p>
               </div>
             </div>
           </div>
@@ -265,371 +264,872 @@
 
         <!-- PEUGEOT 403 COLUMBO -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
-          <img class="img-responsive" src="./images/img_Voiture70/Peugeot_403_Columbo.jpg" alt="">
-          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#test">Plus d'infos</button>
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Peugeot_403_Columbo.jpg" alt="Peugeot_403_Columbo">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#peugeot">Plus d'infos</button>
           <div class="produits_titre">
-            <h2>Un joli titre</h2>
+            <h2>PEUGEOT 403</h2>
             <hr>
             <div class="row">
               <div class="col-6">
-                <p>Année 1990</p>
+                <p>Année 1975</p>
               </div>
               <div class="col-6 text-right">
-                <p>199$</p>
+                <p>25000€</p>
               </div>
             </div>
           </div>
         </div>
-
         
+        <!-- PONTIAC FIREBIRD TRANS AM KITT 2000  -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Pontiac_Firebird_Trans_Am.jpg" alt="Pontiac_Firebird_Trans_Am">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#kitt">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>PONTIAC FIREBIRD TRANS AM</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1978</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>20000€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- FERRARI TESTAROSSA 2 FLICS A MIAMI  -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Ferrari_Testarossa_flic_miami.jpg" alt="Ferrari Testarossa flic miamI">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#testa">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>FERARI TESTAROSA</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1982</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>70000€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- JEEP WRANGLER YJ MAC GAYVER  -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Jeep_Wrangler_YJ_Mc_Gayver.jpg" alt="Ferrari Testarossa flic miamI">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#jeep">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>JEEP WRANGER</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1983</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>20000€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+         <!-- GMC VENDURA AGENCE TOUT RISQUES  -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/GMC_Vandura_Agence_tous_risques.jpg" alt="GMC_Vandura_Agence_tous_risques">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#vendura">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>GMC VENDURA</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1985</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>15000€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--LA BUICK CENTURY 455 DE KOJAK  -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/La_Buick_Century_455_de_KOJAK.jpg" alt="La_Buick_Century_455_de_KOJAK">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#buick">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>BUICK CENTURY</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1969</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>60000€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- LA LOTUS ELAN DE MADAME PEEL  -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Lotus_Elan_Madame_Peel.jpg" alt="Lotus_Elan_Madame_Peel">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#lotus">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>LOTUS ELAN</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1968</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>75000€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- DOLOREAN DE RETOUR VERS LE FUTUR  -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/img_Voiture_70_80/Voiture/Dolorean_de_Retour_vres_le_futur.png" alt="Dolorean_de_Retour_vres_le_futur">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#dolo">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>DOLOREAN</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1981</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>40000€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+   
         
   </section>
   <!-- MODAL-->
 
-  <div class="modal fade" id="test" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
-    <div class="modal-dialog modal-xl" role="document">
+  <!-- DODGE -->
+  <div class="modal fade" id="dodge" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title title_details" id="exampleModalLabel">Titre Article</h5>
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">DODGE CHARGER</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-        </div>
-        
-        <div class="row">
-          
-
-          <div class="modal-pic col-6" style="background:none;"> 
-            <img src="images/clem-onojeghuo-179397-unsplash-1.jpg" class="card-img " alt="...">
-             <img src="images/clem-onojeghuo-179397-unsplash-1.jpg" class="card-img " alt="...">
           </div>
-    
-    <div class="col-6">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-        </table>
-
-    </div>
-
-  </div>        
         
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images\img_Voiture_70_80/Serie/Sheriif_fait_moi_peur.jpg" class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="images\img_Voiture_70_80/Voiture/dodge_charger_general_lee.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1975</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;30000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
           <button type="button" class="btn btn-success">Ajouter au panier</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<!-- MAGNUM -->
+  <div class="modal fade" id="magnum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">FERRARI 308 GTS</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src=" images/img_Voiture_70_80/Serie/Magnum.jpg " class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="images/img_Voiture_70_80/Voiture/Ferrari_308_GTS_Magnum.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1973</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;145000</li>
+                <li>Puissance:&emsp;300ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;60000</li>
+              </ul>
 
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>
+          </div>
 
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p> Article Description</p>
-
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
         </div>
       </div>
     </div>
   </div>
 
 
+  <!--FORD TORINO  -->
+  <div class="modal fade" id="ford" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">FORD TORINO</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/starsky-hutch.jpg" class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="   images/img_Voiture_70_80/Voiture/Ford_Torino_Starsky_Hutch.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1972</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;178000</li>
+                <li>Puissance:&emsp;200ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;25000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--ASTON MARTIN  -->
+  <div class="modal fade" id="aston" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">ASTON MARTIN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/Amicalement_Votre.jpg" class="card-img " alt="..." style="margin:10px;height:80%">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="images/img_Voiture_70_80/Voiture/Aston_Martin_Brett.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1977</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;80000</li>
+                <li>Puissance:&emsp;270ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;110000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FORD MUSTANG-->
+  <div class="modal fade" id="mustang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">FORD MUSTANG</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/McQueen_Bullit.jpg" class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="  images/img_Voiture_70_80/Voiture/Ford_Mustang_Bullit.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1979</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;50000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coccinelle -->
+  <div class="modal fade" id="coccinelle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">COCCINELLE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src=" images/img_Voiture_70_80/Serie/Lacoccinelle_film.jpg" class="card-img " alt="..." style="margin:10px;height:80%;">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src=" images/img_Voiture_70_80/Voiture/Coccinelle_disney.jpg " class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1975</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;108000</li>
+                <li>Puissance:&emsp;100ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;20000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GMC SIERRA -->
+  <div class="modal fade" id="sierra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">GMC SIERRA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/homme_qui_tombe_a_pic_jpg.jpg " class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="images/img_Voiture_70_80/Voiture/GMC_Sierra_Tombe_pic.jpg  " class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1983</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;15000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Mercedes-->
+  <div class="modal fade" id="merco" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">MERCEDES R107</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/Hart.jpg  " class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="  images/img_Voiture_70_80/Voiture/Mercedes_R107_380_SL.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1981</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;30000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PEUGEOT -->
+  <div class="modal fade" id="peugeot" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">PEUGEOT 403</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/Columbo.jpg" class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src=" images/img_Voiture_70_80/Voiture/Peugeot_403_Columbo.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1975</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;35000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KITT 2000 -->
+  <div class="modal fade" id="kitt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">PONTIAC TRANS AM</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/Kitt2000.jpg  " class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src=" images/img_Voiture_70_80/Voiture/Pontiac_Firebird_Trans_Am.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1978</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;20000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testarosa -->
+  <div class="modal fade" id="testa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">FERRARI TESTAROSSA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/Miami.jpg " class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="images/img_Voiture_70_80/Voiture/Ferrari_Testarossa_flic_miami.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1982</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;70000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  JEEP-->
+  <div class="modal fade" id="jeep" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">JEEP WRANGLER</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/Mc_Gayver.jpg  " class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="images/img_Voiture_70_80/Voiture/Jeep_Wrangler_YJ_Mc_Gayver.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1983</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;20000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GMC VENDURA -->
+  <div class="modal fade" id="vendura" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">GMC VENDURA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/Agence_tout_risque.jpg " class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="images/img_Voiture_70_80/Voiture/GMC_Vandura_Agence_tous_risques.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1985</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;160000</li>
+                <li>Puissance:&emsp;150ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;15000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  BUICK-->
+  <div class="modal fade" id="buick" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">BUICK CENTURY</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/KOJAK.jpg" class="card-img " alt="..." style="margin:10px;height:80%;">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="images/img_Voiture_70_80/Voiture/La_Buick_Century_455_de_KOJAK.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1969</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;60000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  LLOTUS-->
+  <div class="modal fade" id="lotus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 clasLOTUS ELANs="modal-title title_details" id="exampleModalLabel" style="font-size:40px"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/Miss_Peel.jpg " class="card-img " alt="..." style="margin:10px;height:80%;">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src=" images/img_Voiture_70_80/Voiture/Lotus_Elan_Madame_Peel.jpg" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1968</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;75000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  DOLOREAN-->
+  <div class="modal fade" id="dolo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel" style="font-size:40px">DOLOREAN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </div>
+        
+          <div class="row  " style=" width:80%;">
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+                <img src="images/img_Voiture_70_80/Serie/Retour_vers_le_futur.jpg" class="card-img " alt="..." style="margin:10px">
+              </div>
+            
+              <div class="modal-pic col-12 " style="background:none; margin:0px;"> 
+               <img src="images/img_Voiture_70_80/Voiture/Dolorean_de_Retour_vres_le_futur.png" class="card-img " alt="..."
+               style="margin:10px">
+              </div>
+      
+              <ul style="margin-top:5px">
+                <li>Année:&emsp;&emsp;&emsp;&emsp;1981</li>
+                <li>Km:&emsp;&emsp;&emsp;&emsp;100000</li>
+                <li>Puissance:&emsp;230ch</li>
+                <li>PRIX:&emsp;&emsp;&emsp;&emsp;40000</li>
+              </ul>
+
+          </div>
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Footer -->
   <footer class="page-footer font-small bg-grey pt-4">
     <div class="container-fluid text-center text-md-left">
       <div class="row">
-          <div class="col-md-3 mb-md-0 mb-3 pl-5">
+        <div class="col-xs-12 col-md-2 offset-md-1">
           <a class="btn-socialMedia">
-            <i class="fab fa-facebook-square"></i></a>
+            <i class="fab fa-facebook-square fa-lg"></i></a>
           <a class="btn-socialMedia">
-            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-twitter-square fa-lg"></i>
           </a>
         </div>
-        <div class="col-md-3 mb-md-0 mb-3">
-            <ul class="list-unstyled">
-            <li>
-              <a class="text-muted" href="#">Produits du mois</a>
-            </li>
-            <li>
-              <a class="text-muted" href="#">Retro-gamming</a>
-            </li>
-            <li>
-              <a class="text-muted" href="#">URSS</a>
-            </li>
-          </ul>
+          <!-- Bouton contact-->
+        <div class="col-xs-12 col-md-2">
+            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
+              Contactez nous
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="container modal-content bg-dark text-white">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-white moodal" id="exampleModalLabel">Contactez nous</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body bg-dark">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="form-control"
+                        style="  font-family: 'rockstar', cursive;  font-size: 2em;" placeholder="Votre email"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="moodal input-group-text">Votre message</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger moodal" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary moodal">Envoyer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- fin du bouton contact-->
         </div>
-        <div class="col-md-3 mb-md-0 mb-3">
+        <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
           <ul class="list-unstyled">
             <li>
-              <a class="text-muted" href="#">Voitures années 70</a>
+              <a class="text-muted" href="./maquettejo2.html">Juke-Box et vyniles</a>
             </li>
             <li>
-              <a class="text-muted" href="#">Armes de guerres anciennes</a>
+              <a class="text-muted" href="./page_retro.html">Retro-gamming</a>
             </li>
             <li>
-              <a class="text-muted" href="#">Juke-Box et vyniles</a>
+              <a class="text-muted" href="./affiche.html">Affiches</a>
             </li>
           </ul>
         </div>
-        <div class="col-md-3 mb-md-0 mb-3">
+        <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="./Voiture70.html">Voitures années 70</a>
+            </li>
+            <li>
+              <a class="text-muted" href="./page-arme.html">Armes de guerres anciennes</a>
+            </li>
+            <li>
+              <a class="text-muted" href="./mobilier.html">Mobilier</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
           <ul class="list-unstyled">
 
             <li>
-              <a class="text-muted" href="#">Qui sommes nous</a>
+              <a class="text-muted" href="../index.html#NOUS">Qui sommes nous</a>
             </li>
             <li>
-              <a class="text-muted" href="#">Contactez nous</a>
+              <a class="text-muted"  href="https://wildcodeschool.com/">Wild Code School</a>
             </li>
             <li>
-              <a class="text-muted" href="https://wildcodeschool.com/">Wild Code School</a>
+                <div class="text-muted font-weight-light font-italic">© copyright - 2019</div>
             </li>
           </ul>
-        </div>
-        <div class="col-xs-12">
-            <div class="text-muted font-weight-light font-italic">© copyright - 2019</div>
         </div>
       </div>
-
     </div>
     </div>
-
-
-
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

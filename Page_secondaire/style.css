@@ -37,6 +37,11 @@ nav {
   text-shadow: 3px 3px 3px grey;
 }
 
+.navbar-brand a{
+  text-decoration: none;
+  color : white;
+}
+
 .liens_nav:hover {
   color: white;
   text-decoration: none;
@@ -51,7 +56,6 @@ nav {
 
 .register:hover {
   opacity: 1;
-  font-size: 1.1rem;
   box-shadow: 1px 1px 1px 1px;
   transition: 250ms;
 }
@@ -154,6 +158,12 @@ header {
   font-family: "rockstar";
 }
 
+.head_categorie{
+
+    background-image:url("images/img_Voiture70/Motif retro 70/motif retro rose.jpg"); 
+}
+
+
 .produit-image {
   border: 1px solid gray;
   margin-top: 2rem;
@@ -237,18 +247,17 @@ header {
   color: white;
 }
 
-.modal-pic {
-  display: block;
-  width: 100%;
-  height: 40%;
-  background-color: #ececec;
-  margin: auto;
-  border-top: 2px solid #dee2e6;
-}
-.modal-pic img {
-  width: 45%;
-  display: block;
-  margin: 2% auto;
+.modal-pic{
+    display: block;
+    width: 100%;
+    height: 40%;
+    background-color : #ececec;
+    margin: auto;
+    
+.modal-pic img{
+    width: 45%;
+    display: block;
+    margin : 2% auto;
 }
 
 .modal-body {
@@ -286,3 +295,35 @@ footer {
   color: white;
 }
 
+/* Bouton retour en haut */
+a#cRetour{
+  border-radius:3px;
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+  color:#fff;
+  background:rgba(0, 0, 0, 0.25);
+  position:fixed;
+  right:20px;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a#cRetour:before{ content: "\25b2"; }
+a#cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+a#cRetour.cInvisible{
+  bottom:-35px;
+  opacity:0;
+  transition:all ease-in 0.5s;
+}
+
+a#cRetour.cVisible{
+  bottom:20px;
+  opacity:1;
+}
