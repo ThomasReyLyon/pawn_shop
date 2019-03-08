@@ -158,6 +158,12 @@ header {
   font-family: "rockstar";
 }
 
+.head_categorie{
+
+    background-image:url("images/img_Voiture70/Motif retro 70/motif retro rose.jpg"); 
+}
+
+
 .produit-image {
   border: 1px solid gray;
   margin-top: 2rem;
@@ -241,18 +247,17 @@ header {
   color: white;
 }
 
-.modal-pic {
-  display: block;
-  width: 100%;
-  height: 40%;
-  background-color: #ececec;
-  margin: auto;
-  border-top: 2px solid #dee2e6;
-}
-.modal-pic img {
-  width: 45%;
-  display: block;
-  margin: 2% auto;
+.modal-pic{
+    display: block;
+    width: 100%;
+    height: 40%;
+    background-color : #ececec;
+    margin: auto;
+    
+.modal-pic img{
+    width: 45%;
+    display: block;
+    margin : 2% auto;
 }
 
 .modal-body {
