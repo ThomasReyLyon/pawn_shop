@@ -1,85 +1,643 @@
 <!DOCTYPE html>
-<html>
+<html lang=fr>
+
 <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-       <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
-       <link rel="stylesheet" href="page_arme.css" type="text/css">
-   	  <title>PwanShop/Armes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300|Lilita+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Pawn Shop</title>
 </head>
-<body>
-  	<header>
-<!-- -------------------------------------------------- NavBar ------------------------------------------------------------------------------------- -->
-    	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
-        <a class="navbar-brand text-white" href="#">Pawn Shop</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#nous">Qui sommes-nous? <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#PduMois">Produits du mois</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Voitures années 70</a>
-                <a class="dropdown-item" href="#">Armes de guerres anciennes</a>
-                <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
-                <a class="dropdown-item" href="#">URSS</a>
-                <a class="dropdown-item" href="#">Retro-gaming</a>
-              </div>
-            </li>
-          </ul>
-          <span class="navbar-text text-white">
-          Tout a dix balles ou j'remballe !!!
-          </span>
-        </div>
+
+<body class="poster_list">
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom bg-dark">
+      <p class="navbar-brand text-white my-0 mr-md-auto">&#xe04f;Pawn&#x00e4;Shop&#xe050;</p>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-white" href="#">Qui sommes-nous?</a>
+        <a class="p-2 text-white" href="#">Produits du mois</a>
       </nav>
-  	</header>
-  <!-- ---------------------------------------------banniere------------------------------------------------------------ -->      
+      <div class="dropdown mr-md-5">
+        <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button"
+          aria-haspopup="true" aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Voitures années 70</a>
+          <a class="dropdown-item" href="Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
+          <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
+          <a class="dropdown-item" href="#">URSS</a>
+          <a class="dropdown-item" href="Page_secondaire/page_retro.html">Retro-gaming</a>
+        </div>
+      </div>
+      <a class="btn btn-light" data-toggle="modal" data-target=".modal_seConnecter" href="#">Se connecter</a>
+      <!-- Modal Se connecter du menu-->
+      <div class="modal fade modal_seConnecter" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <main class="login-form">
+              <div class="cotainer">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="card">
+                      <div class="card-header">Se connecter</div>
+                      <div class="card-body">
+                        <form action="" method="">
+                          <div class="form-group row">
+                            <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail</label>
+                            <div class="col-md-6">
+                              <input type="text" id="email_address" class="form-control" name="email-address" required
+                                autofocus>
+                            </div>
+                          </div>
 
-  
+                          <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Mot de passe</label>
+                            <div class="col-md-6">
+                              <input type="password" id="password" class="form-control" name="password" required>
+                            </div>
+                          </div>
 
-	<div class="container">
-		<div class="row justify-content-center">
-			<h1>Armes de guerres anciennes</h1>
-			<img src="https://carlpepin.files.wordpress.com/2012/09/21.jpg" class="img-fluid" alt="Responsive image">
-		</div>	
-	</div>
-<!-- ---------------------------------------------cards------------------------------------------------------------------- -->  
-<div class="container">
-	<h3>Lebel_Kropastschek</h3>
-	<div class="card-img-top gandalf_frame mt-2" style="height: 22rem">
-		<p class="reward_text">Fusil modèle 1878<br><span>Kropastschek</span><br> En janvier 1886, afin de rattraper ces retards, le futur fusil d'infanterie « Lebel » est mis en commande par le général Boulanger, ministre de la Guerre. Après des mois d'études à l'École normale de tir du « camp de Châlons » et à Châtellerault par la Commission des Fusils à Répétition, le modèle 1886 est définitivement adopté en 1887. Il est baptisé du nom d'un des membres de la commission qui a contribué à sa création : le colonel Nicolas Lebel. 
-			<button type="button" class="btn btn-primary btn-sm">1200€<br>Ajouter au panier</button></p>
-		
-		
-	</div>
+                          <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
+                              <div class="checkbox">
+                                <label><input type="checkbox" name="remember">se souvenir</label>
+                              </div>
+                            </div>
+                          </div>
 
-	<div class="card-body">
-	<p class="card-text text-white">A very dangerous wizard, Balrog Killer...</p>
-	</div> 
-	
-</div>
+                          <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">Connexion</button>
+                            <a href="#" class="btn btn-link">Mot de passe oublié?</a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<!-- ---------------------------------------------footer------------------------------------------------------------------ -->
-
-  <div class="container" id="Liens">
-    
-    <footer class="footer mt-auto py-3 bg-dark">
-      
-        <span class="text-white">Place sticky footer content here.</span>
-      
-    </footer>
+  <div class="container head_categorie pb-3 pt-3">
+    <div class="row justify-content-center pt-4">
+      <div class="jumbotron presentation_categorie col-12">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h1 class="display-4 text-center">"Armes de guerres anciennes"</h1>
+            <p class="lead text-center">Bienvenu sur notre page dédié au armes de nos ancêtre"</p>
+            <hr class="my-4">
+            <p class="text-center">"Collectionner les objets militaires est une passion qui demande du temps, de la patience et de la modestie et une solide documentation. Ces exigences sont d’autant plus importantes qu’avec le temps, les objets deviennent plus rares et de plus en plus difficiles d’accès. Toutefois, l’art militaire est un thème de collection qui permet encore, selon les possibilités de chacun, de trouver des objets de premier choix historique, sans nécessairement que le prix soit inaccessible.<br>AVERTISSEMENT<br>
+            Seuls l’achat et la vente d’armes anciennes et de collection sont permis sur ce site. L’achat, la vente et la mise en ligne d’annonces concernant des armes de catégories A, B et C sont strictement interdits.
+            Pour rappel, afin d’acheter/vendre une arme ancienne ou de collection sur ce site, vous devez remplir les conditions suivantes :
+            - Etre majeur
+            - Etre au courant de la législation en vigueur .</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- TEMPLATE PRODUIT-->
+
+  <section id="produits">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="http://www.aiolfi.com/wp-content/uploads/images_lots/686-armees-alliees-et-de-laxe-du-xixeme-au-xxeme-siecle/2278/2278_1-1920x900.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#m-14">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>M-14</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1957</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>1 600$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Sturmgewehr_44.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#Sturmgewehr">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Sturmgewehr MP44</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1942</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>2 200$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLZgOQ13DAMj4GwRHxxJ-SkCLlzCoedMs53xijHsS9nB7PB4pJVA" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#m-40">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Fusil de précision M40</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1966</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>1 800$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Remington_Model_700.JPG/280px-Remington_Model_700.JPG"/> 
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#Remington">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Remington 700</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1962</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>2 240$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://one.nbstatic.fr/uploaded/20180504/4858671/__00001_NOUVEAU-FUSIL-ASSAUT-AK47-KALASHNIKOV-OR-REPRODUCTION-ORIGINALE-RUSSIE-1947.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#ak-47">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>AK-47 GOLD</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1947</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>10 000$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ekKLhKLWNTJz2LDQdJPEq4AIA4PRhhyf1KgcNSKrBl4ls8LpbQ" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#m4">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Carabine M4</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1994</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>2 500$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/ThompsonM1A1VWM.jpg/280px-ThompsonM1A1VWM.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#Thompson">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Thompson M1928</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1921</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>3 000$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5qunW_4WStrIq6ow9RuociVtHawOmwQt-vr9_0NuseETzp4EBg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#Maschinenpistole">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Maschinenpistole 40 (MP40)</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1940</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>1 800$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://www.evike.com/images/large/ics-41178-2.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#Garand">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>M1 Garand</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1936</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>4 199$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4efp6BVZqEvx6DGoxFOmdhgpfAPSGssTse4ZIHTvvoxwQAiHbqQ" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#desert">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Desert Eagle</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1982</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>1 200$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- MODAL-->
+
+  <div class="modal fade" id="m-14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">M-14</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="http://www.aiolfi.com/wp-content/uploads/images_lots/455-vente-militaria-du-xixe-xxe-siecle/2701/2701_1-450x300.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Le fusil M14 fut le premier fusil d'assaut de l'US Army, qui l'adopta en 1957 en remplacement du M1 Garand et de la carabine M1. Sa production en masse démarra en 1958 et plus d'un million trois cents mille M14 furent distribués aux forces américaines entre 1959 et 1964.<br>[prix 1 600$] </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Sturmgewehr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Sturmgewehr MP44</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Sturmgewehr_44.jpg" alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Le Sturmgewehr 44, en abrégé StG 44, est un fusil d'assaut développé en Allemagne durant la période du Troisième Reich, en 1942, lors de la Seconde Guerre mondiale. Il est généralement considéré comme le précurseur des fusils d'assaut modernes.
+
+          L'arme porte parfois la dénomination MP 43 ou MP 44, dans les premiers stades de son développement. Suivant, en cela, la désignation opérée à propos des pistolet-mitrailleur MP 40 ; mitrailleuse MG 42, ou, encore le fusil mitrailleur FG 42, qui bénéficie de légères différences, ainsi, une crosse avec une pente légèrement différente et un viseur modifié. <br>[prix  2 200$] </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="m-40" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Fusil de précision M40</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/M40_01.jpg/300px-M40_01.jpg" alt="...">
+        </div>
+        <div class="modal-body">
+          <p>En avril 1966, l'US Marine Corps, après avoir évalué divers fusils et lunettes, commanda 700 fusils Remington 40x, une version « varmint/target » du Remington 700. Fourni aux unités de Marines à partir de 1966 et appelé M40 (un numéro qui semble anachronique, vu que trois ans plus tard l'US Army appellera son propre fusil de précision M21, et que le M24 n'apparaîtra qu'en 1988). Il était équipé d'une crosse style sporter en noyer, et, pour la plupart (certains annoncent le chiffre de 550 sur les 700) ou tous selon les sources, une lunette Redfield 3-9X Accu-range alors déjà en vente sur le marché civil. Les lunettes et leurs montages type « pont » étaient montés sur l'arme chez Remington, et le montage et la lunette étaient marqués du numéro de série de l'arme à la réception de celle-ci par les Marines.<br>
+          Action : Remington 40x, dont la mécanique est identique à celle du Remington 700 ADL mais avec la sous-garde (fond de chargeur et pontet) en aluminium du Remington 700 BDL. Le boîtier était phosphaté, mais la culasse était bronzée.
+          Canon : canon lourd Remington en calibre .308 Win, long de 24 pouces, rayé au pas de 1:10", de .830" de diamètre à la bouche, phosphaté.<br>
+          Fût : fût d'une seule pièce, en noyer huilé non peint, souvent avec une pièce noir à l'extrémité avant. Crosse type « Monte Carlo » (appuie-joue en « queue de castor »). Plaque de couche en aluminium anodisé noir et marqué du logo Remington. Il semble que certaines aient été peintes (camouflage) par leurs utilisateurs, mais cette pratique fut probablement rare.<br>
+          Optiques : généralement, une Redfield 3-9 x 40 Accu-range à réticule Duplex. Les premiers M40 avaient leurs lunettes anodisées noir, qui se dégradait rapidement au Viêt Nam en brun tabac ; les plupart des M40, construits après ces premiers modèles, eurent leurs lunettes anodisées vertes.
+          Montages : embase « pont » et anneaux bronzés à quatre vis du montage Redfield JR. L'embase avait des angles carrés, alors que les modèles récents, toujours en fabrication, ont des angles arrondis.
+          Munition : M118 Match de 173 grains
+          Magasin : 5 cartouches (4+1)<br>
+
+          La production du M40 s'étala de 1966 à 1971, et s'éleva à 995 armes portant des numéros de série allant de 168 179 à 322 769. <br>[prix 1 800$] </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="Remington" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Remington 700</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="https://www.armurerie-lavaux.com/images/produit/opti/WS05.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>La Remington model 700 est une carabine à verrou fabriquée par la firme Remington depuis 1962, basée sur le modèle 721-722 lui-même inspiré des systèmes Mauser 98, Winchester modèle 70, Remington model 30 . Une version militaire en a été conçue, connue sous le nom de M24 ou M40A3 des US Army et US Marines Corps.<br>La Remington 700 communément appelée R700 est très ressemblante aux versions des forces armées des États-Unis mais elle a une force de frappe beaucoup plus forte dans ses modèles en gros calibres. Cette carabine a été déclinée en plusieurs versions et dans de nombreux calibres les plus fréquents: le 7.08 Rem, .22-250 Rem, .243_Winchester, .308 Win, .338 Lapua Magnum.
+          Plusieurs types de crosses équipent les modèles civils: les crosses bois, synthétique de couleur verte, marron, noire. La liste des accessoires disponibles pour la personnaliser est très fournie.
+          L'arme utilisée par le tireur dans le film Phone Game est une R700 à crosse AICS en calibre .308, et l'arme est très présente au cinéma.
+          <br>[prix 2 240$] </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="modal fade" id="ak-47" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Remington 700</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGttHB7FHuZZq1HiSjF8LERgW98wMlfl2YZBnf50SPm-jRuC0H9w" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>L’AK-47 Gold version(en russe : Автомат Калашникова, « Avtomat Kalachnikova » modèle 1947)note 1, est un fusil d'assaut conçu par l'ingénieur soviétique Mikhaïl Kalachnikov.
+          <br>
+          L'AK-47 est le premier modèle d'une vaste famille de fusils d'assaut, dont le modèle le plus répandu est l'AKM.
+          <br>
+          Son coût très faible, sa robustesse, sa fiabilité et sa grande facilité d'entretien le rendent extrêmement populaire, en particulier auprès des guérillas et des pays ayant peu de moyens financiers pour équiper leur infanterie. C'est également une arme produite dans de nombreux pays dotés d'une industrie d'armement, particulièrement dans les anciens pays de la zone d'influence de l'Union soviétique et du bloc de l'Est.
+          <br>
+          De toutes les armes à feu existant dans le monde à l'époque de sa création, l'AK-47 est l'une des plus fiables. En effet, une arme de ce type s'enraye rarement et résiste à tous les environnements : dans l'eau, dans le sable, en atmosphère humide, etc. C'est la raison pour laquelle les guérilleros et autres membres de groupes armés révolutionnaires en sont munis lors de leurs missions (désert, forêt et autres endroits hostiles). Cependant, elle n'est pas à l'abri d'une usure relative à son utilisation, et nécessite tout de même un entretien, comme toutes les armes à feu. 
+          <br>[prix 1 000$] </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="modal fade" id="m4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Remington 700</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="data:image/jpeg;base64,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" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">Le Colt M4 est une carabine militaire conçue aux États-Unis, en service dans les forces spéciales américaines à partir de 1994 et qui remplace les variantes du M16 dont il est dérivé dans toutes les unités de combat américaines1. version raccourcie du M16 au canon de 14,5 pouces (368 mm) de long et à crosse télescopique. Celle-ci comprend néanmoins une grande partie du mécanisme du fusil, la crosse peut donc être raccourcie d'un tiers de sa longueur mais du fait du ressort de rappel logé dans le tube de crosse, celle ci ne peut être entièrement escamotée comme sur d'autres fusils d'assaut. Ses autres caractéristiques sont identiques à celles du M16A2 (calibre 5,56 mm OTAN, sélecteur de tir avec sûreté, coup par coup et rafale contrôlée de 3 coups). Au départ destinée aux forces spéciales pour qui une arme légère garantit de meilleures mobilité et maniabilité. Cette arme équipa ensuite les unités n'ayant pas besoin de la portée d'un M16. C'est en particulier le cas des équipages de véhicules, des artilleurs et au niveau du groupe de combat, des sous-officiers, officiers, radios etc. 
+          <br>[prix 2 500$] </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Titre Article</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p> Article Description</p>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Thompson" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Thompson M1928</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="http://www.mpmuseum.org/ww2equipment/ww2weapons/m1a1_1.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>John T. Thompson fonda l'Auto Ordnance Corporation a Cleveland, Ohio, en 1916. Cette entreprise fut financée par Thomas Fortune Ryan, un homme richissime, pour le développement d'un fusil semi-automatique avec un système de culasse à ouverture retardée. Étant donné que le fonctionnement de ce fusil n'était pas satisfaisant, Thompson décida de développer un pistolet-mitrailleur sur le même principe dans le calibre .45 ACP du pistolet Colt M1911. Le premier exemplaire de la Thompson fut construit en 1917, la première série de 40 pièces entre 1918 et 1919, la production industrielle débuta en 1921. L'arme fut utilisée par la IRA (Irish Republican Army), la pègre, des industriels, la police et le FBI pendant la prohibition où elle était plus connue sous le nom de "Tommy Gun", "Chicago Typewriter", "Chicago Piano", "Chicago Style" ou "The Chopper". Le pistolet-mitrailleur Thompson fut massivement utilisé dans des versions modifiées et simplifiées pendant la Seconde Guerre mondiale, puis durant la guerre de Corée. 
+          <br>[prix 3 000$] </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="modal fade" id="Maschinenpistole" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Maschinenpistole 40</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgqImULvUcPyq3oaq2GDOutMOXYM8NI78_UToJXlon9cFFErlug" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Le Maschinenpistole 40, couramment appelé MP40, est un pistolet mitrailleur, chambré pour la munition Parabellum 9×19 mm successeur du Maschinenpistole 38 (les chiffres correspondant aux deux derniers chiffres de leurs dates d'adoption respectives, durant le XXe siècle). Il fut conçu à partir du MP38 afin d'augmenter la production, comme l'a été la MG42 par rapport à la MG34. Plus de 1,2 million de MP40 et MP38 seront produits durant la Seconde Guerre mondiale.  
+          <br>[prix 1 800$] </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="desert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Desert Eagle</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaf7aeFh8X0hGCPhvDoSsogzgZuU_vNH5lLjUiVEz1vWZivclrQ" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Le Desert Eagle (en français « aigle du désert ») est un pistolet semi-automatique.
+            ce pistolet a été conçu au début des années 1980 par Magnum Research, aux États-Unis et par Israel Military Industries, en Israël. Au départ, la production a été confiée à IMI, en Israël, pour les versions Mk I et Mk VII. Puis, aux États-Unis de 1995 à 1998 pour la version Mk XIX. Ensuite, à nouveau en Israël. Depuis 2009, le Desert Eagle est de nouveau produit aux États-Unis2.
+            Connu par les tireurs sportifs pour pouvoir être chambré dans les calibres .357 Magnum, .44 Magnum, et .50 Action Express, sa puissance de feu lui a valu une certaine notoriété auprès du cinéma et des jeux vidéo. 
+          <br>[prix 1 200$] </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="modal fade" id="Garand" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">M1 Garand</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_OvqfRPUg9vAFh_19AkbaVM02d55H9j6YW16erIn4ICpDFUrSyg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p>Le M1 Garand est le premier fusil semi-automatique réglementaire de l'US Army. Il remplaça le Springfield M1903 à verrou mais n'est pas le premier fusil semi-automatique utilisé dans une armée, contrairement à ce que l'on croit souvent. Il fut aussi l'arme destinée aux fantassins de l'US Army la plus produite durant la Seconde Guerre mondiale, réputée pour sa précision fort acceptable pour une arme de production de masse à bas coût, la vélocité de sa munition bien supérieure à celle de la carabine US M1, ainsi que son système de rechargement semi-automatique.   
+          <br>[prix 4 199$] </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="page-footer font-small bg-grey pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+          <div class="col-md-3 mb-md-0 mb-3 pl-5">
+          <a class="btn-socialMedia">
+            <i class="fab fa-facebook-square"></i></a>
+          <a class="btn-socialMedia">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+            <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="#">Produits du mois</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Retro-gamming</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">URSS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="#">Voitures années 70</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Armes de guerres anciennes</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Juke-Box et vyniles</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <ul class="list-unstyled">
+
+            <li>
+              <a class="text-muted" href="#">Qui sommes nous</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Contactez nous</a>
+            </li>
+            <li>
+              <a class="text-muted" href="https://wildcodeschool.com/">Wild Code School</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12">
+            <div class="text-muted font-weight-light font-italic">© copyright - 2019</div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
 </body>
+
 </html>
