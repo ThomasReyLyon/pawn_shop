@@ -12,11 +12,6 @@ header {
 h1 {
   font-family: "rockstar", cursive;
 }
-.liens_nav {
-  font-family: "rockstar", cursive;
-  font-size: 1.6rem;
-  color: white;
-}
 
 .navbar-brand:hover {
   color: white;
@@ -172,6 +167,27 @@ ul {
 }
 
 .card_article:hover .fleche {
+    color: #343a40;
+    transition: 250ms;
+}
+.noStyle {
+  color: #ffff;
+}
+
+.noStyle:hover .card-title {
+  color: #ffff;
+}
+
+/* CAROUSSEL */
+
+footer {
+  color: #666 !important;
+  font-size: 0.85rem;
+}
+
+}
+
+.card_article:hover .fleche {
     color:rgba(211,211,211,1);;
     transition: 250ms;
 }
@@ -189,30 +205,6 @@ ul {
 
 
 
-
-
-
-
-
-
-
-
-
-html,
-body {
-  margin: 0;
-  color: rgba(0, 0, 0, 0.54);
-  background: #ececec;
-  font-family: "Raleway", sans-serif;
-}
-header {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-nav {
-  font-family: "rockstar", cursive;
-  font-size: 1.6rem;
-}
 
 .nav-link,
 .dropdown-item {
@@ -277,9 +269,6 @@ h1 {
   src: url("fonts2/NASHVILL.TTF");
 }
 
-header {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
 
 .navbar-brand {
   font-family: "york";
@@ -312,11 +301,6 @@ header {
   color: white;
 }
 
-.card-title {
-  font-family: "nashvill";
-  font-size: 1.5rem;
-  color: white;
-}
 .card-text {
   font-family: "rockstar";
   font-size: 1rem;
@@ -340,6 +324,9 @@ header {
   background-color: orange;
   font-family: "rockstar";
   font-size: 1rem;
+}
+.more_info a {
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .more_info:hover {
@@ -510,4 +497,13 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     font-family: 'rockstar', cursive;
     font-size: 2em;
   }
-  
+
+  /* Page index -> cursor du courousel */
+  .carouselIndicators {
+  color:grey;
+  padding-left:48.5%;
+}
+
+.list-inline-item {
+  cursor: pointer;
+}
