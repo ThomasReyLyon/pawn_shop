@@ -157,9 +157,15 @@ ul {
 }
 
 .card-img-overlay {
-  padding-top: 5rem;
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
+
+@media screen and (max-width : 576px) {
+  .card-img-overlay {
+    padding-top: 5rem;
+  }
+}
+
 
 .fa-arrow-alt-circle-right {
   font-size: 3rem;
