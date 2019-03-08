@@ -10,309 +10,625 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <title>Pawn Shop</title>
+
 </head>
 
-<body class="poster_list">
+<body>
   <header>
-    <!-- -------------------------------------------------- NavBar ------------------------------------------------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <a class="navbar-brand text-white mr-5" href="#">&#xe04f;Pawn&#x00e4;Shop&#xe050;</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#nous">Qui sommes-nous? <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#PduMois">Produits du mois</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button"
-              aria-haspopup="true" aria-expanded="false">Categories</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Voitures années 70</a>
-              <a class="dropdown-item" href="Page_secondaire/page-arme.html">Armes de guerres anciennes</a>
-              <a class="dropdown-item" href="#">Juke-Box et vyniles</a>
-              <a class="dropdown-item" href="#">URSS</a>
-              <a class="dropdown-item" href="#">Retro-gaming</a>
-            </div>
-          </li>
-        </ul>
-        <span class="navbar-text text-white">
-          Tout a dix balles ou j'remballe !!!
-        </span>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom bg-dark">
+      <p class="navbar-brand text-white my-0 mr-md-auto"><a href="../index.html">&#xe04f;Pawn&#x00e4;Shop&#xe050;</a></p>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="m-2 liens_nav" href="../index.html#NOUS">Qui sommes-nous?</a>
+      </nav>
+      <div class="dropdown mr-lg-5">
+        <a class="m-2 dropdown-toggle liens_nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Categories</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="./Voiture70.html">Voitures années 70</a>
+          <a class="dropdown-item" href="./page-arme.html">Armes de guerres anciennes</a>
+          <a class="dropdown-item" href="./maquettejo2.html">Juke-Box et vyniles</a>
+          <a class="dropdown-item" href="./affiche.html">Affiches</a>
+          <a class="dropdown-item" href="./page_retro.html">Retro-gaming</a>
+          <a class="dropdown-item" href="./mobilier.html">Mobilier</a>
+        </div>
       </div>
-    </nav>
-  </header>
+      <a class="btn btn-light register" data-toggle="modal" data-target=".bd-example-modal-xl" href="#">Se connecter</a>
+      <!-- Modal Se connecter du menu-->
+      <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content bg-dark text-white">
+            <div class="cotainer">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <h3 class="moodal">Se connecter</h3>
+                  <form action="" method="">
+                    <div class="row">
+                      <label for="email_address" class="moodal col-md-4 col-form-label text-md-right">E-Mail</label>
+                      <div class="col-md-6">
+                        <input type="text" id="email_address" class="form-control" name="email-address" required
+                          autofocus>
+                      </div>
+                    </div>
 
-  <div class="container-fluid head_categorie">
+                    <div class="row">
+                      <label for="password" class="moodal col-md-4 col-form-label text-md-right">Mot de passe</label>
+                      <div class="col-md-6">
+                        <input type="password" id="password" class="form-control" name="password" required>
+                      </div>
+                    </div>
 
-    <div class="row justify-content-center pt-4">
+                    <div class="row">
+                      <div class="col-md-6 offset-md-4">
+                        <div class="moodal checkbox">
+                          <label><input type="checkbox" name="remember">se souvenir</label>
+                        </div>
+                      </div>
+                    </div>
 
-        <div class="jumbotron presentation_categorie text-white col-12 col-md-8">
-          <div class="row justify-content-between">
-            <div class="col-8">
-            <h1 class="display-4">"nom de la catégorie"</h1>
-            <p class="lead">Bienvenu sur notre page dédié à "nom de la catégorie"</p>
-            <hr class="my-4">
-            <p>"description de la catégorie". Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur explicabo commodi enim nemo blanditiis modi similique nesciunt. Expedita laudantium aliquam doloribus non aut aliquid eaque iure itaque et provident.</p>
+                    <div class="moodal col-md-6 offset-md-4">
+                      <button type="submit" class="btn btn-primary">Connexion</button>
+                      <a href="#" class="btn btn-link">Mot de passe oublié?</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
-            <div class="col-4">
-            <img src="https://via.placeholder.com/150">      
-            
           </div>
         </div>
       </div>
     </div>
-
-    <div class="row justify-content-around pt-4">
-      <div class="card col-12 col-md-3">
-        <div class="card-header">
-          Affiche Kellar
-        </div>
-        <img src="images/vintage_kellar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Une affiche qu'elle est belle</h5>
-          <p class="card-text">L'alcool c'est mal.<br>Les affiches : c'est mieux.</p>
-          <button class="btn btn-lg btn-danger" data-toggle="modal" data-target="#afficheKellar">En savoir
-            plus</button><i type="button" class="fas fa-shopping-cart"></i>
-
-        </div>
-      </div>
-
-      <div class="card col-12 col-md-3">
-        <div class="card-header">
-          Affiche Kellar
-        </div>
-        <img src="images/vintage_kellar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Une affiche qu'elle est belle</h5>
-          <p class="card-text">L'alcool c'est mal.<br>Les affiches : c'est mieux.</p>
-          <button class="btn btn-lg btn-danger" data-toggle="modal" data-target="#affiche2">En savoir plus</button><i
-            type="button" class="fas fa-shopping-cart"></i>
-        </div>
-
-      </div>
-      <div class="card col-12 col-md-3">
-        <div class="card-header">
-          Affiche Kellar
-        </div>
-        <img src="images/vintage_kellar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Une affiche qu'elle est belle</h5>
-          <p class="card-text">L'alcool c'est mal.<br>Les affiches : c'est mieux.</p>
-          <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Affiche Kellar"
-            data-content="Cette affiche a été désigné par Markus Von Oberstürmbahnführer, un soir d'été près de Kharkiv">En
-            savoir plus</button><i class="fas fa-shopping-cart"></i>
+  </header>
+  <div class="container head_categorie pb-3 pt-3">
+    <div class="row justify-content-center pt-4">
+      <div class="jumbotron presentation_categorie col-12">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h1 class="display-4">Art & Affiches Vintage</h1>
+            <p class="lead">Bienvenu sur notre page dédié à nos oeuvres d'art.</p>
+            <hr class="my-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, facere debitis recusandae at iusto ex dicta. Nemo omnis esse eaque id fugiat dolor iure, unde odio quaerat optio recusandae nesciunt.</p>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="row justify-content-around pt-4">
-      <div class="card col-12 col-md-3">
-        <div class="card-header">
-          Affiche Kellar
-        </div>
-        <img src="images/vintage_kellar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Une affiche qu'elle est belle</h5>
-          <p class="card-text">L'alcool c'est mal.<br>Les affiches : c'est mieux.</p>
-          <button class="btn btn-lg btn-danger" data-toggle="modal" data-target="#afficheKellar">En savoir
-            plus</button><i type="button" class="fas fa-shopping-cart"></i>
-
-        </div>
-      </div>
-
-      <div class="card col-12 col-md-3">
-        <div class="card-header">
-          Affiche Kellar
-        </div>
-        <img src="images/vintage_kellar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Une affiche qu'elle est belle</h5>
-          <p class="card-text">L'alcool c'est mal.<br>Les affiches : c'est mieux.</p>
-          <button class="btn btn-lg btn-danger">En savoir plus</button><i type="button" class="fas fa-shopping-cart"
-            data-toggle="modal" data-target="#exampleModal"></i>
-        </div>
-
-      </div>
-      <div class="card col-12 col-md-3">
-        <div class="card-header">
-          Affiche Kellar
-        </div>
-        <img src="images/vintage_kellar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Une affiche qu'elle est belle</h5>
-          <p class="card-text">L'alcool c'est mal.<br>Les affiches : c'est mieux.</p>
-          <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Affiche Kellar"
-            data-content="Cette affiche a été désigné par Markus Von Oberstürmbahnführer, un soir d'été près de Kharkiv">En
-            savoir plus</button><i class="fas fa-shopping-cart"></i>
-        </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-around pb-4 pt-4">
-      <div class="card col-12 col-md-3">
-        <div class="card-header">
-          Affiche Kellar
-        </div>
-        <img src="images/vintage_kellar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Une affiche qu'elle est belle</h5>
-          <p class="card-text">L'alcool c'est mal.<br>Les affiches : c'est mieux.</p>
-          <button class="btn btn-lg btn-danger" data-toggle="modal" data-target="#afficheKellar">En savoir
-            plus</button><i type="button" class="fas fa-shopping-cart"></i>
-
-        </div>
-      </div>
-
-      <div class="card col-12 col-md-3">
-        <div class="card-header">
-          Affiche Kellar
-        </div>
-        <img src="images/vintage_kellar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Une affiche qu'elle est belle</h5>
-          <p class="card-text">L'alcool c'est mal.<br>Les affiches : c'est mieux.</p>
-          <button class="btn btn-lg btn-danger">En savoir plus</button><i type="button" class="fas fa-shopping-cart"
-            data-toggle="modal" data-target="#exampleModal"></i>
-        </div>
-
-      </div>
-      <div class="card col-12 col-md-3">
-        <div class="card-header">
-          Affiche Kellar
-        </div>
-        <img src="images/vintage_kellar.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Une affiche qu'elle est belle</h5>
-          <p class="card-text">L'alcool c'est mal.<br>Les affiches : c'est mieux.</p>
-          <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Affiche Kellar"
-            data-content="Cette affiche a été désigné par Markus Von Oberstürmbahnführer, un soir d'été près de Kharkiv">En
-            savoir plus</button><i class="fas fa-shopping-cart"></i>
-        </div>
-      </div>
-    </div>
-
   </div>
 
+
+  <!-- TEMPLATE PRODUIT-->
+
+  <section id="produits">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/poster_pics/micheile-henderson-1139513-unsplash.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#poster1">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Darkie - Micheile Henderson</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1968</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>29,99€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="images/poster_pics/sri-lanka-1389833-unsplash.jpg" alt="lanka">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#poster2">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Bat Cigarettes - Sri Lanka</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1978</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>80€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/poster_pics/aalok-atreya-1240929-unsplash.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#poster3">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Love is (w)all - Aalok Atreya</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1971</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>199€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/poster_pics/eberhard-grossgasteiger-1212293-unsplash.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#poster4">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Villa Elsa</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1984</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>320€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/poster_pics/ciel-cheng-1388253-unsplash.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#poster5">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>PSG?</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Date inconnue</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>10€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/poster_pics/jon-tyson-762620-unsplash.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#poster6">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Eczema²</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1961</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>110€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/poster_pics/vintage_kellar.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#poster7">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Kellar</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1939</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>250€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/poster_pics/anastasia-dulgier-1155317-unsplash.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#poster8">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>La Cobra</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1980</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>630€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/poster_pics/toa-heftiba-1204167-unsplash.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#poster9">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Saarie</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1993</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>40€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 overlay">
+          <img class="img-responsive" src="./images/poster_pics/nandha-kumar-pj-1123384-unsplash-1.jpg" alt="">
+          <button class="btn btn-lg more_info" data-toggle="modal" data-target="#poster10">Plus d'infos</button>
+          <div class="produits_titre">
+            <h2>Estampes</h2>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <p>Année 1900</p>
+              </div>
+              <div class="col-6 text-right">
+                <p>199€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
   <!-- MODAL-->
 
-  <div class="modal fade" id="afficheKellar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
+  <div class="modal fade" id="poster1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Affiche Kellar</h5>
+          <h5 class="modal-title title_details" id="exampleModalLabel">Darkie</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-          </button>
+        </div>
+        <div class="modal-pic">
+          <img src="images/poster_pics/micheile-henderson-1139513-unsplash.jpg" class="card-img " alt="...">
         </div>
         <div class="modal-body">
-          <p class="author">Artiste: Markus Von Oberstürmbahnführer</p>
-          <p class="title">Titre: Kellar</p>
-          <p class="year">Année: 1946</p>
-          <p class="specialist">L'oeil du spécialiste :</p>
-          <blockquote>Je surkiffe tellement c'est beau.<br><cite>Stéphane Guivarc'h</cite></blockquote>
-
-          <p class="description">Une affiche superbe. Belle. Engageante. Achetez la.</p>
-          <p class="now">MAINTENANT</p>
+          <p> Oeuvre d'art par Micheile Henderson.</p>
+          <p>créée en 1968</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione minus consequatur? Cum, perspiciatis consequuntur. Saepe necessitatibus temporibus velit, mollitia, numquam atque laboriosam illum nostrum aspernatur, assumenda magnam incidunt provident.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="affiche2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
+  <div class="modal fade" id="poster2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Affiche 2</h5>
+          <h5 class="modal-title title_details" id="exampleModalLabel">Bat Cigarettes</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-          </button>
+        </div>
+        <div class="modal-pic">
+          <img src="images/poster_pics/sri-lanka-1389833-unsplash.jpg" class="card-img " alt="...">
         </div>
         <div class="modal-body">
-          <p class="author">Artiste: Markus Von Oberstürmbahnführer</p>
-          <p class="title">Titre: Kellar</p>
-          <p class="year">Année: 1946</p>
-          <p class="specialist">L'oeil du spécialiste :</p>
-          <blockquote>Je surkiffe tellement c'est beau.<br><cite>Stéphane Guivarc'h</cite></blockquote>
-
-          <p class="description">Une affiche superbe. Belle. Engageante. Achetez la.</p>
-          <p class="now">MAINTENANT</p>
+          <p> Oeuvre d'art anonyme du Srik Lanka.</p>
+          <p>créée en 1978</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione minus consequatur? Cum, perspiciatis consequuntur. Saepe necessitatibus temporibus velit, mollitia, numquam atque laboriosam illum nostrum aspernatur, assumenda magnam incidunt provident.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
-          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  < <div class="modal fade" id="poster3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Love is (w)all</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="images/poster_pics/aalok-atreya-1240929-unsplash.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Oeuvre d'art par Aalok Atreya.</p>
+          <p>créée en 1971</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione minus consequatur? Cum, perspiciatis consequuntur. Saepe necessitatibus temporibus velit, mollitia, numquam atque laboriosam illum nostrum aspernatur, assumenda magnam incidunt provident.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="poster4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Villa Elsa</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="images/poster_pics/eberhard-grossgasteiger-1212293-unsplash.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Oeuvre d'art de Eberhard Grossgasteiger</p>
+          <p>créée en 1984</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione minus consequatur? Cum, perspiciatis consequuntur. Saepe necessitatibus temporibus velit, mollitia, numquam atque laboriosam illum nostrum aspernatur, assumenda magnam incidunt provident.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="poster5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">PSG?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="images/poster_pics/ciel-cheng-1388253-unsplash.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Oeuvre d'art Ciel Cheng</p>
+          <p>Date inconnue</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione minus consequatur? Cum, perspiciatis consequuntur. Saepe necessitatibus temporibus velit, mollitia, numquam atque laboriosam illum nostrum aspernatur, assumenda magnam incidunt provident.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="poster6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Eczema²</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="images/poster_pics/jon-tyson-762620-unsplash.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Oeuvre d'art par Jon Tyson</p>
+          <p>créée en 1991</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione minus consequatur? Cum, perspiciatis consequuntur. Saepe necessitatibus temporibus velit, mollitia, numquam atque laboriosam illum nostrum aspernatur, assumenda magnam incidunt provident.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="poster7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Kellar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="images/poster_pics/vintage_kellar.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Oeuvre d'art par Markus Kellar.</p>
+          <p>créée en 1939</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione minus consequatur? Cum, perspiciatis consequuntur. Saepe necessitatibus temporibus velit, mollitia, numquam atque laboriosam illum nostrum aspernatur, assumenda magnam incidunt provident.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="poster8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">La Cobra</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="images/poster_pics/anastasia-dulgier-1155317-unsplash.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Oeuvre d'art par Anastasia Dulgier.</p>
+          <p>créée en 1980</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione minus consequatur? Cum, perspiciatis consequuntur. Saepe necessitatibus temporibus velit, mollitia, numquam atque laboriosam illum nostrum aspernatur, assumenda magnam incidunt provident.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="poster9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Saarie</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="images/poster_pics/toa-heftiba-1204167-unsplash.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Oeuvre d'art par Tao Heftiba.</p>
+          <p>créée en 1993</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione minus consequatur? Cum, perspiciatis consequuntur. Saepe necessitatibus temporibus velit, mollitia, numquam atque laboriosam illum nostrum aspernatur, assumenda magnam incidunt provident.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="poster10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title title_details" id="exampleModalLabel">Estampes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-pic">
+          <img src="images/poster_pics/nandha-kumar-pj-1123384-unsplash-1.jpg" class="card-img " alt="...">
+        </div>
+        <div class="modal-body">
+          <p> Oeuvre d'art par Nandha Kumar.</p>
+          <p>créée en 1900</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione minus consequatur? Cum, perspiciatis consequuntur. Saepe necessitatibus temporibus velit, mollitia, numquam atque laboriosam illum nostrum aspernatur, assumenda magnam incidunt provident.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">retour</button>
+          <button type="button" class="btn btn-success">Ajouter au panier</button>
         </div>
       </div>
     </div>
   </div>
 
 
-  <footer class="footer mt-auto py-3 bg-dark text-white">
+  <section>
+ 
+    <div><a id="cRetour" class="cInvisible" href="#"></a></div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      window.onscroll = function(ev) {
+        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+      };
+    });
+    </script>
+    </section>
 
-    <div class="row" style="margin:auto;">
+<!-- Footer -->
+  <footer class="page-footer font-small bg-grey pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-xs-12 col-md-2 offset-md-1">
+          <a class="btn-socialMedia">
+            <i class="fab fa-facebook-square fa-lg"></i></a>
+          <a class="btn-socialMedia">
+            <i class="fab fa-twitter-square fa-lg"></i>
+          </a>
+        </div>
+          <!-- Bouton contact-->
+        <div class="col-xs-12 col-md-2">
+            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
+              Contactez nous
+            </button>
 
-      <div class="mx-3">
-        <ul>
-          <li>
-            <a class="text-white" href="#">Produits du mois</a>
-          </li>
-          <li>
-            <a class="text-white" href="#">Retro-gamming</a>
-          </li>
-          <li>
-            <a class="text-white" href="#">URSS</a>
-          </li>
-        </ul>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="container modal-content bg-dark text-white">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-white moodal" id="exampleModalLabel">Contactez nous</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body bg-dark">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="form-control"
+                        style="  font-family: 'rockstar', cursive;  font-size: 2em;" placeholder="Votre email"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="moodal input-group-text">Votre message</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger moodal" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary moodal">Envoyer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- fin du bouton contact-->
+        </div>
+        <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="./maquettejo2.html">Juke-Box et vyniles</a>
+            </li>
+            <li>
+              <a class="text-muted" href="./page_retro.html">Retro-gamming</a>
+            </li>
+            <li>
+              <a class="text-muted" href="./affiche.html">Affiches</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="./Voiture70.html">Voitures années 70</a>
+            </li>
+            <li>
+              <a class="text-muted" href="./page-arme.html">Armes de guerres anciennes</a>
+            </li>
+            <li>
+              <a class="text-muted" href="./mobilier.html">Mobilier</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-md-2 mb-md-0 mb-4">
+          <ul class="list-unstyled">
+
+            <li>
+              <a class="text-muted" href="../index.html#NOUS">Qui sommes nous</a>
+            </li>
+            <li>
+              <a class="text-muted"  href="https://wildcodeschool.com/">Wild Code School</a>
+            </li>
+            <li>
+                <div class="text-muted font-weight-light font-italic">© copyright - 2019</div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul>
-          <li>
-            <a class="text-white" href="#">Voitures années 70</a>
-          </li>
-          <li>
-            <a class="text-white" href="#">Armes de guerres anciennes</a>
-          </li>
-          <li>
-            <a class="text-white" href="#">Juke-Box et vyniles</a>
-          </li>
-        </ul>
-      </div>
-      <div class="offset-6">
-        <a class="btn btn-social btn-facebook" href="#" role="button">
-          <span class="fa fa-facebook text-white  bg-primary"></span></a>
-
-        <a class="btn btn-social btn-twitter" href="#" role="button">
-          <span class="fa fa-twitter text-white  bg-primary"></span></a>
-      </div>
-      <div>
-        <ul>
-
-          <li>
-            <a class="text-white" href="#">Qui sommes nous</a>
-          </li>
-          <li>
-            <a class="text-white" href="#">Contactez nous</a>
-          </li>
-          <li>
-            <a class="text-white" href="https://wildcodeschool.com/">Wild Code School</a>
-          </li>
-        </ul>
-      </div>
-
     </div>
-    <div class="text-muted mx-auto font-weight-light font-italic" style="width: 200px;">© copyright - 2019
     </div>
   </footer>
 
